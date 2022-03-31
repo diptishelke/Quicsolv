@@ -1,0 +1,620 @@
+CRITICAL - 2022-03-14 09:13:18 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\spark(45): require('C:\\xampp1\\htdoc...')
+#4 {main}
+ERROR - 2022-03-14 03:48:04 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+ERROR - 2022-03-14 03:53:40 --> Unknown column 'namespace' in 'where clause'
+ERROR - 2022-03-14 03:53:42 --> Unknown column 'version' in 'field list'
+CRITICAL - 2022-03-14 04:14:51 --> Undefined property: App\Controllers\Blog::$db
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp1\\htdoc...', 22)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-03-14 04:18:09 --> Undefined property: App\Controllers\Blog::$db
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp1\\htdoc...', 23)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-03-14 04:22:00 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:22:04 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:22:05 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:23:09 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:24:07 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:24:08 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:24:11 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:24:19 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:24:20 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:24:20 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:24:45 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:24:47 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:24:48 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:30:32 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:30:44 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:30:47 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:30:51 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:30:53 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:30:54 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:30:54 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:30:54 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:30:57 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:36:37 --> Cannot call constructor
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-03-14 04:37:47 --> Undefined property: App\Controllers\Blog::$load
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp1\\htdoc...', 15)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-03-14 04:48:36 --> Undefined property: App\Controllers\Blog::$load
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp1\\htdoc...', 15)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Blog->__construct()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-03-14 04:48:53 --> Allowed fields must be specified for model: App\Models\Blog
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Blog')
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(32): CodeIgniter\Model->insert(Array)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#9 {main}
+CRITICAL - 2022-03-14 04:50:02 --> Allowed fields must be specified for model: App\Models\Blog
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Blog')
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(32): CodeIgniter\Model->insert(Array)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#9 {main}
+CRITICAL - 2022-03-14 04:50:04 --> Allowed fields must be specified for model: App\Models\Blog
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Blog')
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(32): CodeIgniter\Model->insert(Array)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#9 {main}
+CRITICAL - 2022-03-14 04:50:21 --> Allowed fields must be specified for model: App\Models\Blog
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Blog')
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(32): CodeIgniter\Model->insert(Array)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#9 {main}
+CRITICAL - 2022-03-14 04:50:22 --> Allowed fields must be specified for model: App\Models\Blog
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Blog')
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(32): CodeIgniter\Model->insert(Array)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#9 {main}
+ERROR - 2022-03-14 04:52:32 --> Table 'quicsolve.blogs' doesn't exist
+CRITICAL - 2022-03-14 04:52:32 --> Table 'quicsolve.blogs' doesn't exist
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 04:59:55 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 04:59:55 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:00:23 --> Unknown column 'blogs.id' in 'where clause'
+CRITICAL - 2022-03-14 05:00:23 --> Unknown column 'blogs.id' in 'where clause'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `blogs` ...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `blogs` ...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `blogs` ...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `blogs` ...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(26): CodeIgniter\Model->update(1, Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:00:26 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:00:26 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:00:40 --> Unknown column 'blogs.id' in 'where clause'
+CRITICAL - 2022-03-14 05:00:40 --> Unknown column 'blogs.id' in 'where clause'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `blogs` ...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `blogs` ...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `blogs` ...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `blogs` ...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(26): CodeIgniter\Model->update(1, Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:03:46 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:03:46 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2022-03-14 05:04:01 --> Undefined variable $builder
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp1\\htdoc...', 26)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+ERROR - 2022-03-14 05:04:23 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:04:23 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:08:22 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:08:22 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2022-03-14 05:08:33 --> Undefined variable $id
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp1\\htdoc...', 33)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+ERROR - 2022-03-14 05:08:54 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:08:54 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2022-03-14 05:09:06 --> Undefined constant "App\Controllers\blog_id"
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+ERROR - 2022-03-14 05:10:04 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:10:04 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2022-03-14 05:10:18 --> Undefined constant "App\Controllers\blog_id"
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+ERROR - 2022-03-14 05:10:51 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:10:51 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:11:04 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-03-14 05:11:04 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(33): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#12 {main}
+ERROR - 2022-03-14 05:11:25 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:11:25 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:12:45 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:12:45 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:13:08 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-03-14 05:13:08 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(33): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#12 {main}
+ERROR - 2022-03-14 05:15:12 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:15:12 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:15:14 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:15:14 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:16:54 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:16:54 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:16:54 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:16:54 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-03-14 05:18:20 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-03-14 05:18:20 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(33): CodeIgniter\BaseModel->delete()
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#12 {main}
+ERROR - 2022-03-14 05:35:28 --> Duplicate entry '1' for key 'PRIMARY'
+CRITICAL - 2022-03-14 05:35:28 --> Duplicate entry '1' for key 'PRIMARY'
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bl...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bl...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bl...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bl...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Blog.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Blog->savingdata()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
