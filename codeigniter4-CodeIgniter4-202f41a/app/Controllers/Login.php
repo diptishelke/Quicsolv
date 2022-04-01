@@ -6,45 +6,48 @@ use App\Models\FormModel;
 use App\Controllers\BaseController;
 
 class Login extends BaseController
-{
+{     
+    
     public function login()
     {
 
-
-        helper(['form','url']);
-        
-        $validation = \Config\Services::validation();
-        $check = $this->validate([
+     // echo"hii";exit();
+            return view ('form');
+      
            
-            'email' => 'required',
           
-            'password' => 'required',
-        ]);
+          
+        
+    }
 
-        if(!$check)
-        {
-            return view ('form',['validation' => $this->validator]);
-        }
-        else
-        {
+    public function submit()
+    {
+        try {
+              
+                  
+       
             $model = new FormModel();
-            $data = [
-            
+            $model->save([
             'email' => $this->request->getVar('email'),
             
             'password' => $this->request->getVar('password'),
-            ];
-
-            $model->insert($data);
-
-            return view ('/my_account');
-
-            // return redirect()->back()->withInput(); 
+            ]);
+           
+             
         }
-    }
+        catch (\Exception $e) {
+            die($e->getMessage());
+        }
+          
+        $session = \Config\Services::session();
 
-    public function sign_in()
-    {
-        
+        $session->setFlashdata('success', 'login succesfully');
+        return view ('my_account');
+      
+
+       // return $this->response->redirect('/my_account');
+          
+          
+         
     }
 }

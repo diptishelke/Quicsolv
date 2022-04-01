@@ -4,33 +4,33 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Students extends Migration
+class Users extends Migration
 {
-  
-public function up()
+    public function up()
     {
         $this->forge->addField([
-            'blog_id'          => [
+            'id'          => [
                 'type'           => 'INT',
                 'constraint'     => 5,
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'blog_title'       => [
+            'email'       => [
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'blog_description' => [
-                'type' => 'TEXT',
-                'null' => true,
+            'password' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '100',
             ],
         ]);
-        $this->forge->addKey('blog_id', true);
-        $this->forge->createTable('blog');
+        $this->forge->addKey('id', true);
+        $this->forge->createTable('users');
+        
     }
 
     public function down()
     {
-        $this->forge->dropTable('blog');
+        $this->forge->dropTable('users');
     }
 }
