@@ -6,11 +6,12 @@ use App\Models\FormModel;
 use App\Controllers\BaseController;
 
 class Login extends BaseController
-{
+{     
+    
     public function login()
     {
 
-
+        try {
         helper(['form','url']);
         
         $validation = \Config\Services::validation();
@@ -20,13 +21,17 @@ class Login extends BaseController
           
             'password' => 'required',
         ]);
-
+        }
+        catch (\Exception $e) {
+            die($e->getMessage());
+        }
         if(!$check)
         {
             return view ('form',['validation' => $this->validator]);
         }
         else
-        {
+        {  
+          
             $model = new FormModel();
             $data = [
             
@@ -34,13 +39,14 @@ class Login extends BaseController
             
             'password' => $this->request->getVar('password'),
             ];
-
+        }
             $model->insert($data);
+           
 
             return view ('/my_account');
-
+          
             // return redirect()->back()->withInput(); 
-        }
+        
     }
 
     public function sign_in()
