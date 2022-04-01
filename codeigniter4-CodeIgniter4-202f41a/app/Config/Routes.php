@@ -38,10 +38,8 @@ $routes->get('/saving_data', 'Blog::savingdata');
 
 $routes->get('/login','Login::login');
 
-//$routes->post('/submit','Login::save');
-//$routes->get('/users/sign_up','User::sign_up');
+$routes->post('/submit','Login::submit');
 
-//$routes->get('/users/sign_in','User::sign_in');
 
 
 /*

@@ -20,8 +20,8 @@
                  <h5 class="card-header">Login</h5>
                <div class="card-body">
               
-               <?= $validation->listErrors() ?>
-                     <form action="<?php echo site_url('Login/login');?>" method="post"id='frm'>
+              
+                     <form action="submit" method="post" id='frm'>
                      
                       <div class="form-group">
                           <label for="email" style="padding:5px;">email address</label>
@@ -48,7 +48,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     
-    <script src="script.js"></script>
-    
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
