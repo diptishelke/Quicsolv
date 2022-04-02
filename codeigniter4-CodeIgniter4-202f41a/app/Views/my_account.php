@@ -11,7 +11,10 @@
 
   </head>
   <body>
-
+                  <a href="login" class="nav-link">
+                    <i class="feather-16 mg-x-5" data-feather="log-out"></i>
+                    Logout
+                  </a>
         <div class="container" style="margin:25px">
              <div class="col-md-6">
              <div class="card">

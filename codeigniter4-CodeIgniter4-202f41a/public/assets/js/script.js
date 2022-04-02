@@ -1,6 +1,9 @@
 jQuery('#frm').validate({
 rules:{
-    email:"required",
+    email:{ required:true,
+        email:true
+
+    },
     password:{
         required:true,
         minlength:5
@@ -8,8 +11,15 @@ rules:{
     },
 
 },messages:{
-    email:"please enter your email",
-    password:"please enter your password"
+    email:{
+        required:"please enter your email",
+        email:"please enter valid email"
+    },
+
+    password:{
+        required:"please enter your password",
+        minlength:"please enter minimum 5 character"
+    }
 
 }
 });
