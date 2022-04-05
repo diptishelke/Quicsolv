@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\FormModel;
+use App\Models\Usermodel;
 use App\Controllers\BaseController;
 use Hash;
 
@@ -11,45 +11,38 @@ class Login extends BaseController
     
     public function login()
     {
-
-     
-            return view ('login-form');
-                  
+        return view ('login-form');
     }
-      
-           public function submit()
+    public function submit()
     {
       
-          $model = new FormModel();
-          $data['table']=$model->findAll();
+          $usrmodel = new Usermodel();
+          $data['table']=$usrmodel->findAll();
 
-           $result= $model->where('email',$this->request->getvar('email'))
-           ->where('password',$this->request->getvar('password'))
-           ->first();
+           $result= $usrmodel->where('email',$this->request->getvar('email'))->first();
+           //print_r($result);exit;
+         $usrmodel->pswverify($this->request->getvar('password'),$result['password']);
+         $session = session();
 
-
-           $session = session();
-
-           if($result)
-           {
-            $session->setFlashdata('login','login Succesfully');
-            $session->set('user',$result['name']); 
-           
-            return view ('my_account',$data);
-            
-           }
-           else{
+         if($result)
+         {
+          $session->setFlashdata('login','login Succesfully');
+          $session->set('user',$result['name']); 
+         
+          return view ('my_account',$data);
+          
+         }
+         else
+         {
             $session->setFlashdata('login','login Failed!');
-           
             return view ('login-form');
-           }
-           
+         }
         }
         public function myaccount()
         {
             $model = new FormModel();
             $data['table']=$model->findAll();
-
+  
             $session = session();
            
             if($session->has('user'))
@@ -67,11 +60,32 @@ class Login extends BaseController
          $session = session();
          $session->destroy();
          return view ('login-form');
- 
- 
+  
+  
         }
+    }
+     
+    
+     
+         
+                  
+  
+      
+           
+  
+  
+        
+           
+         
+         
+     
+
+           
+
+           
 
 
+         
            
                       
        
@@ -91,4 +105,4 @@ class Login extends BaseController
           
          
        
-}
+
