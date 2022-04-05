@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\FormModel;
 use App\Controllers\BaseController;
+use Hash;
 
 class Login extends BaseController
 {     
@@ -11,43 +12,83 @@ class Login extends BaseController
     public function login()
     {
 
-     // echo"hii";exit();
-            return view ('form');
-      
-           
-          
-          
-        
-    }
-
-    public function submit()
-    {
-        try {
-              
+     
+            return view ('login-form');
                   
-       
-            $model = new FormModel();
-            $model->save([
-            'email' => $this->request->getVar('email'),
-            
-            'password' => $this->request->getVar('password'),
-            ]);
-           
-             
-        }
-        catch (\Exception $e) {
-            die($e->getMessage());
-        }
-          
-        $session = \Config\Services::session();
+    }
+      
+           public function submit()
+    {
+      
+          $model = new FormModel();
+          $data['table']=$model->findAll();
 
-        $session->setFlashdata('success', 'login succesfully');
-        return view ('my_account');
+           $result= $model->where('email',$this->request->getvar('email'))
+           ->where('password',$this->request->getvar('password'))
+           ->first();
+
+
+           $session = session();
+
+           if($result)
+           {
+            $session->setFlashdata('login','login Succesfully');
+            $session->set('user',$result['name']); 
+           
+            return view ('my_account',$data);
+            
+           }
+           else{
+            $session->setFlashdata('login','login Failed!');
+           
+            return view ('login-form');
+           }
+           
+        }
+        public function myaccount()
+        {
+            $model = new FormModel();
+            $data['table']=$model->findAll();
+
+            $session = session();
+           
+            if($session->has('user'))
+            {
+               
+                return view ('my_account',$data);
+            }
+            else{
+                
+                return view ('login-form');
+            }
+        }
+        public function logout()
+        {
+         $session = session();
+         $session->destroy();
+         return view ('login-form');
+ 
+ 
+        }
+
+
+           
+                      
+       
+            
+      
+           
+     
+        
+             
+       
+       
+      
       
 
-       // return $this->response->redirect('/my_account');
+       
           
           
          
-    }
+       
 }

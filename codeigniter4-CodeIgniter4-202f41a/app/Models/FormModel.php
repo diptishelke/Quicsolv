@@ -10,7 +10,7 @@ class FormModel extends Model
 
 	protected $primaryKey = 'id';
 
-	protected $allowedFields = [ 'email','password'];
+	protected $allowedFields = [ 'name','last-name','email','phone','password'];
 
 }
 

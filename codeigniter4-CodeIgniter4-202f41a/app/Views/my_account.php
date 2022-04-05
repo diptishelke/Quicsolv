@@ -11,41 +11,64 @@
 
   </head>
   <body>
-                  <a href="login" class="nav-link">
-                    <i class="feather-16 mg-x-5" data-feather="log-out"></i>
-                    Logout
+        <?php $session = session();?>
+        <?php echo $session->getFlashdata('login');?> 
+        <h1>welcome, <?php echo $session->user;?> </h1>
+
+
+
+                  <a href="<?php echo site_url('Login/logout');?>" class="nav-link">Logout
                   </a>
+                   
+                    
+                 
+
+                 
         <div class="container" style="margin:25px">
-             <div class="col-md-6">
+            
              <div class="card">
                  <h5 class="card-header">My Account</h5>
-               <div class="card-body">
               
+               <table class="table table-bordered table-striped">
+                 <thead>
+                   
+                         <th>Id</th>
+                         <th>Name</th>
+                         <th>LastName</th>
+                         <th>Phone</th>
+                         <th>Email</th>
+                         <th>Password</th>
+                         
+                         </thead>
+                         <tbody>
+                           <?php  foreach ($table as $list) { ?>
+                           <tr>
+                            
+                             <td><?php echo $list['id']; ?></td>
+                             <td><?php echo $list['name']; ?></td>
+                             <td><?php echo $list['last-name']; ?></td>
+                             <td><?php echo $list['phone']; ?></td>
+                             <td><?php echo $list['email']; ?></td>
+                             <td><?php echo $list['password']; ?></td>
+                             </tr>
+                             <?php } ?>
+                             </tbody>
+                             </table>
+
+
+
+
+
               
-                     <form action="get">
-                     <div class="form-group">
-                          <label for="first_name" style="padding:5px;">first name</label>
-                          <input type="text" name="first_name" id="first_name" value="" class="form-control" placeholder="first name">  
-                      </div>   
-                      <div class="form-group">
-                          <label for="last_name" style="padding:5px;">last name</label>
-                          <input type="text" name="last_name" id="last_name" value="" class="form-control" placeholder="last name">  
-                      </div>
-                      
-                      <div class="form-group">
-                          <label for="phone" style="padding:5px;">phone number</label>
-                          <input type="number" name="phone" id="phone" value="" class="form-control" placeholder="phone number">  
-                      </div>
                      
-                      
-                     </form>
-               </div>
-             </div>
+              
              </div>   
         </div>
       
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+
   </body>
 </html>
