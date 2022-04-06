@@ -1,33 +1,32 @@
-
-  </html>
-  <!doctype html>
+ <!doctype html>
   <html lang="en">
     <head>
       <title>:Login</title>
     
 
       
-      <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrap.min.css" >
-     // <link rel="stylesheet" href="<?php echo base_url();?>/asset//cs/bootstrapcdn.css">
+     
+       <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrap.min.css">
+       <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrapcdn.css">
        <script src="<?php echo base_url();?>/asset/js/jquery.min.js"></script>
        <script src="<?php echo base_url();?>/asset/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/style.css" type="text/css"/>
     </head>
-    <body>
+    <body onload="getcookiedata()">
 
           <div class="container" style="margin:25px; padding: 50px; width: 80%">
               <div class="col-md-6"style=" width: 80%">
               <div class="col-md-9 col-lg-6 col-xl-5">
-          <img src="<?php echo base_url();?>/asset/login.jpg"
-            class="img-fluid" alt="Sample image">
-        </div>
+               <img src="<?php echo base_url();?>/asset/login.jpg"
+                class="img-fluid" alt="Sample image">
+              </div> 
               <div class="card">
                   <h5 class="card-header">Login</h5>
                  <h3> <?php $session = session(); echo $session->getFlashdata('login');?> </h3>
                 <div class="card-body">
                 
                 
-                      <form action="submit" method="post" id='frm'>
+                      <form action="<?php echo site_url('Login/submit');?>" method="post" id='frm'>
                       
                         <div class="form-group">
                             <label for="email" style="padding:5px;">email address</label>
@@ -64,14 +63,47 @@
       
       <script src="<?php echo base_url();?>/asset/js/script.js"> </script>
       <script type="text/javascript">
+
       function setcookie (){
         var u = document.getElementById('email').value;
         var p = document.getElementById('password').value;
 
-        document.cookie="my="+u+";path= http://localhost:8080";
-        document.cookie="mypswd="+p+";path= http://localhost:8080";
+        document.cookie="myemail="+u+";path= http://localhost:8080/";
+        document.cookie="mypswd="+p+";path= http://localhost:8080/";
 
       }
+      function getcookiedata(){
+       
+        var email = getcookie('myemail');
+        var mypswd= getcookie('mypswd');
+        document.getElementById('email').value=email;
+        document.getElementById('password').value=mypswd;
+      }
+
+
+        function getcookie(cname){
+          var name = cname + "=";
+          var decodedCookie= decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i <ca.length; i++){
+            var c =ca[i];
+            while(c.charAt(0) == ' '){
+              c = c.substring(i);
+
+            }
+            if (c.indexOf(name) == 0){
+             return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+
+          
+        }
+
+
+
+      
       </script>
-    </body>
-  </html>
+  </body>
+  
+</html>

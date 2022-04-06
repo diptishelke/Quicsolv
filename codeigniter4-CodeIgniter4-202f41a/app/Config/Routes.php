@@ -39,6 +39,10 @@ $routes->get('/', 'Home::index');
 $routes->get('/login','Login::login');
 
 $routes->post('/submit','Login::submit');
+$routes->post('user/delete/(:any)','Login::destroy/$1');
+
+
+
 
 
 

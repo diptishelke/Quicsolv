@@ -14,7 +14,7 @@ class Login extends BaseController
         return view ('login-form');
     }
     public function submit()
-    {
+       {
       
           $usrmodel = new Usermodel();
           $data['table']=$usrmodel->findAll();
@@ -40,8 +40,8 @@ class Login extends BaseController
         }
         public function myaccount()
         {
-            $model = new FormModel();
-            $data['table']=$model->findAll();
+            $usrmodel = new Usermodel();
+            $data['table']=$usrmodel->findAll();
   
             $session = session();
            
@@ -63,6 +63,38 @@ class Login extends BaseController
   
   
         }
+        public function edit($id)
+        {
+            $usrmodel = new Usermodel();
+           $data['row']= $usrmodel->where('id',$id)->first();
+           return view('edit',$data);
+
+
+        }
+        public function update()
+        {
+            $usrmodel = new Usermodel();
+            $id = $this->request->getvar('id');
+            $data = ['name'=>$this->request->getvar('name'),
+                     'last-name'=>$this->request->getvar('last-name'),
+                     'phone'=>$this->request->getvar('phone'),
+                     'email'=>$this->request->getvar('email'),
+                     'password'=>$this->request->getvar('password'),];
+                     $usrmodel->update($id,$data);
+                     //return redirect()->to(site_url('Login/submit'));
+
+        }
+        
+        public function delete($id)
+        {
+               $usrmodel = new Usermodel();
+               $usrmodel->where('id',$id)->delete();
+               
+              
+
+              return redirect()->to(site_url('my_account'));
+        }
+        
     }
      
     

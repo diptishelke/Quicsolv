@@ -13,10 +13,7 @@ class Usermodel extends Model
 	protected $allowedFields = [ 'name','last-name','email','phone','password'];
 
 	public function pswverify($password,$hash){
-		
-		
-		 
-          
+		    
 		if (password_verify($password, $hash)) {
 			return true ;
 		} else {
@@ -24,6 +21,11 @@ class Usermodel extends Model
 		}
 
 	}
+	
+		
+		 
+      
+	
 
 }
 
