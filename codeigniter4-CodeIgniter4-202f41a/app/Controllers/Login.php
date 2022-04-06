@@ -29,7 +29,7 @@ class Login extends BaseController
           $session->setFlashdata('login','login Succesfully');
           $session->set('user',$result['name']); 
          
-          return view ('my_account',$data);
+          return view ('userprofile',$data);
           
          }
          else
@@ -48,7 +48,7 @@ class Login extends BaseController
             if($session->has('user'))
             {
                
-                return view ('my_account',$data);
+                return view ('userprofile',$data);
             }
             else{
                 
@@ -79,7 +79,7 @@ class Login extends BaseController
                      'last-name'=>$this->request->getvar('last-name'),
                      'phone'=>$this->request->getvar('phone'),
                      'email'=>$this->request->getvar('email'),
-                     'password'=>$this->request->getvar('password'),];
+                     ];
                      $usrmodel->update($id,$data);
                      //return redirect()->to(site_url('Login/submit'));
 
