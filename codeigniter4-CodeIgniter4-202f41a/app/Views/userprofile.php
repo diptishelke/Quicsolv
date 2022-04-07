@@ -2,11 +2,7 @@
   <html lang="en">
     <head>
       <title>:Login</title>
-    
-
-      
-     
-       <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrap.min.css">
+      <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrap.min.css">
        <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrapcdn.css">
        <script src="<?php echo base_url();?>/asset/js/jquery.min.js"></script>
        <script src="<?php echo base_url();?>/asset/js/bootstrap.min.js"></script>
@@ -67,6 +63,11 @@
           </div>
     </body>     
 </html>               
+    
+
+      
+     
+       
                       
 
 

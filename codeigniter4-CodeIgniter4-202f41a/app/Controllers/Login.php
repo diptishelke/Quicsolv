@@ -27,7 +27,7 @@ class Login extends BaseController
          if($result)
          {
           $session->setFlashdata('login','login Succesfully');
-          $session->set('user',$result['name']); 
+          $session->set('user',$result[ ('name')]); 
          
           return view ('userprofile',$data);
           
@@ -81,7 +81,7 @@ class Login extends BaseController
                      'email'=>$this->request->getvar('email'),
                      ];
                      $usrmodel->update($id,$data);
-                     //return redirect()->to(site_url('Login/submit'));
+                     return redirect()->to(site_url('Login/login'));
 
         }
         
@@ -89,11 +89,13 @@ class Login extends BaseController
         {
                $usrmodel = new Usermodel();
                $usrmodel->where('id',$id)->delete();
+               return redirect()->to(site_url('userprofile'));
+        }
                
               
 
-              return redirect()->to(site_url('my_account'));
-        }
+             
+       
         
     }
      

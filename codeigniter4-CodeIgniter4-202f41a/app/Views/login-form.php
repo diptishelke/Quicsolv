@@ -2,14 +2,8 @@
   <html lang="en">
     <head>
       <title>:Login</title>
-    
-
-      
-     
        <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrap.min.css">
-       <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrapcdn.css">
-       <script src="<?php echo base_url();?>/asset/js/jquery.min.js"></script>
-       <script src="<?php echo base_url();?>/asset/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrapcdn.css">
         <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/style.css" type="text/css"/>
     </head>
     <body onload="getcookiedata()">
@@ -58,27 +52,32 @@
         
     
      
-     
-      <script src="<?php echo base_url();?>/asset/js/validate.min.js"></script>
+          <script src="<?php echo base_url();?>/asset/js/jquery.min.js"></script>
+          <script src="<?php echo base_url();?>/asset/js/validate.min.js"></script>
       
-      <script src="<?php echo base_url();?>/asset/js/script.js"> </script>
-      <script type="text/javascript">
+         <script src="<?php echo base_url();?>/asset/js/bootstrap.min.js"></script>
+         <script src="<?php echo base_url();?>/asset/js/script.js"> </script>
+         <script type="text/javascript">
 
-      function setcookie (){
+       function setcookie ()
+       {
         var u = document.getElementById('email').value;
         var p = document.getElementById('password').value;
 
         document.cookie="myemail="+u+";path= http://localhost:8080/";
         document.cookie="mypswd="+p+";path= http://localhost:8080/";
 
-      }
-      function getcookiedata(){
-       
+       }
+       function getcookiedata()
+       {
         var email = getcookie('myemail');
         var mypswd= getcookie('mypswd');
         document.getElementById('email').value=email;
         document.getElementById('password').value=mypswd;
-      }
+        console.log(email);
+       }
+      
+       
 
 
         function getcookie(cname){
@@ -103,7 +102,12 @@
 
 
       
-      </script>
+       </script>
   </body>
   
 </html>
+    
+
+      
+     
+       
