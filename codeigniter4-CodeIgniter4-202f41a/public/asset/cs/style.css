@@ -8,3 +8,6 @@
 .nav-link{
     float: right;
 }
+.h1,h1{
+    color: red;
+}

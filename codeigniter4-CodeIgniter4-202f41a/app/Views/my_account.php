@@ -1,77 +1,82 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>My Account</title>
-   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    
-   
-    <link rel="stylesheet" href="<?php echo base_url();?>/asset/cs/bootstrap.min.css" >
-  </head>
-  <body>
-        <?php $session = session();?>
-        <?php echo $session->getFlashdata('login');?> 
-        <h1>welcome, <?php echo $session->user;?> </h1>
+<head>
+  <title>My Account</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/cs/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/cs/bootstrapcdn.css">
+  <script src="<?php echo base_url(); ?>/asset/js/jquery.min.js"></script>
+  <script src="<?php echo base_url(); ?>/asset/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/cs/style.css" type="text/css" />
 
-                  <a href="<?php echo site_url('Login/logout');?>" class="nav-link">Logout
-                  </a>
-                   
-                    
-                 
+</head>
 
-                 
-        <div class="container" style="margin:25px">
-            
-             <div class="card">
-                 <h5 class="card-header">My Account</h5>
-              
-               <table class="table table-bordered table-striped">
-                 <thead>
-                   
-                         <th>Id</th>
-                         <th>Name</th>
-                         <th>LastName</th>
-                         <th>Phone</th>
-                         <th>Email</th>
-                         
-                         <th>Action</th>
-                         
-                         </thead>
-                         <tbody>
-                           <?php  foreach ($table as $list) : ?>
-                           <tr>
-                            
-                             <td><?php echo $list['id']; ?></td>
-                             <td><?php echo $list['name']; ?></td>
-                             <td><?php echo $list['last-name']; ?></td>
-                             <td><?php echo $list['phone']; ?></td>
-                             <td><?php echo $list['email']; ?></td>
-                            
-                             <td>
-                             <a href ="<?php echo site_url('Login/edit/'.$list['id']); ?>" >Edit</a>
-                             <a href ="<?php echo site_url('Login/delete/'.$list['id']); ?>">Delete</a>
-
-                             </td>
-                           </tr>
-                            <?php endforeach;?>
-                        </tbody>
-                      </table>
+<body>
+  <?php $session = session(); ?>
+  <?php echo $session->getFlashdata('login'); ?>
+  <h1>welcome, <?php echo $session->user; ?> </h1>
 
 
 
+  <a href="<?php echo site_url('Login/logout'); ?>" class="nav-link">Logout
+  </a>
+  <div class="col-md-9 col-lg-6 col-xl-5">
+    <img src="<?php echo base_url(); ?>/asset/userprofile.jpg" class="img-fluid" alt="Sample image">
+  </div>
+  <div class="container" style="margin:25px">
+
+    <div class="card">
+      <h5 class="card-header">My Account</h5>
+
+      <table class="table table-bordered table-striped">
+        <thead>
+
+          <th>Id</th>
+          <th>Name</th>
+          <th>LastName</th>
+          <th>Phone</th>
+          <th>Email</th>
+
+          <th>Action</th>
+
+        </thead>
+        <tbody>
+          <?php foreach ($table as $list) : ?>
+            <tr>
+
+              <td><?php echo $list['id']; ?></td>
+              <td><?php echo $list['name']; ?></td>
+              <td><?php echo $list['last-name']; ?></td>
+              <td><?php echo $list['phone']; ?></td>
+              <td><?php echo $list['email']; ?></td>
+
+              <td>
+                <a href="<?php echo site_url('Login/edit/' . $list['id']); ?>">Edit</a>
+                <a href="<?php echo site_url('Login/delete/' . $list['id']); ?>">Delete</a>
+
+              </td>
+            </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
 
 
-              
-                     
-              
-             </div>   
-        </div>
-      
-    
-   
-  </body>
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+</body>
+
 </html>

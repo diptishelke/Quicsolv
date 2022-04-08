@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\Usermodel;
 use App\Controllers\BaseController;
-use Hash;
 
 class Login extends BaseController
 {
@@ -21,11 +20,14 @@ class Login extends BaseController
         $result = $usrmodel->where('email', $this->request->getvar('email'))->first();
         $usrmodel->pswverify($this->request->getvar('password'), $result['password']);
         $session = session();
-       // if (password_verify($pswverify['password'], $result['password'])) {
-       //     return view('userprofile', $data);
-       // } else {
-        //    $session->setFlashdata('login', 'login failed');
-        //}
+        if (password_verify ($this->request->getvar('password'),$result['password'])) {
+			return view('userprofile', $data);
+		} else {
+			 $session->setFlashdata('login', 'login Failed!');
+       return view('login-form');
+		}
+
+        
 
         if ($result) {
             $session->setFlashdata('login', 'login Succesfully');
@@ -37,21 +39,8 @@ class Login extends BaseController
             return view('login-form');
         }
     }
-    public function myaccount()
-    {
-        $usrmodel = new Usermodel();
-        $data['table'] = $usrmodel->findAll();
-
-        $session = session();
-
-        if ($session->has('user')) {
-
-            return view('userprofile', $data);
-        } else {
-
-            return view('login-form');
-        }
-    }
+   
+    
     public function logout()
     {
         $session = session();
@@ -75,7 +64,8 @@ class Login extends BaseController
             'email' => $this->request->getvar('email'),
         ];
         $usrmodel->update($id, $data);
-        return redirect()->to(site_url('Login/login'));
+       
+       return redirect()->to(site_url('Login/login'));
     }
 
     public function delete($id)

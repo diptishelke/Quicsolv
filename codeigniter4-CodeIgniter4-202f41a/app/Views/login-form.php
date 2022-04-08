@@ -74,7 +74,7 @@
        var mypswd = getcookie('mypswd');
        document.getElementById('email').value = email;
        document.getElementById('password').value = mypswd;
-       console.log(email);
+       console.log(mypswd);
      }
 
 

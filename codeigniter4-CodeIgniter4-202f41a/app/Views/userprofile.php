@@ -18,7 +18,7 @@
   <div class="container" style="margin:25px; padding: 50px; width: 80%">
     <div class="col-md-6" style=" width: 80%">
       <div class="col-md-9 col-lg-6 col-xl-5">
-        <img src="<?php echo base_url(); ?>/asset/usrprofile.jpg" class="img-fluid" alt="Sample image">
+        <img src="<?php echo base_url(); ?>/asset/userprofile.jpg" class="img-fluid" alt="Sample image">
       </div>
       <div class="card">
         <h5 class="card-header">user profile</h5>
