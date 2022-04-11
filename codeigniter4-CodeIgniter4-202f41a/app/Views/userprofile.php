@@ -12,8 +12,8 @@
 
 <body>
   <?php $session = session(); ?>
-  
-  <h1>welcome, <?php echo $session->user;?> </h1>
+
+  <h1>welcome, <?php echo $session->user; ?> </h1>
   <a href="<?php echo site_url('Login/logout'); ?>" class="nav-link">Logout </a>
   <div class="container" style="margin:25px; padding: 50px; width: 80%">
     <div class="col-md-6" style=" width: 80%">
@@ -26,7 +26,7 @@
         <div class="card-body">
           <form action="<?php echo site_url(''); ?>" method="post" id='frm' enctype='multipart/form-data'>
             <?php foreach ($table as $list) : ?>
-              
+
               <div class="form-group">
                 <label for="name" style="padding:5px;">name</label>
                 <input type="name" name="name" id="name" value="<?php echo $list['name']; ?>" class="form-control">
@@ -51,21 +51,17 @@
                 <input type="password" name="password" id="password" value="<?php echo $list['password']; ?>" class="form-control">
               </div>
               <div class="form-group">
-                <label for="body">select image</label>
-                <input type="file" name="image" id="image" value="<?php echo $list['image']; ?>" class="form-control">
+                <label for="body">image</label>
+                <input type="image" name="image" id="image" value="<?php echo $list['image']; ?>" class="form-control">
               </div>
-               <div class="d-flex justify-content-between align-items-center">
-
+              <div class="d-flex justify-content-between align-items-center">
                 <div class="d-grid gap-2" style="margin-top:10px;">
                   <a href="<?php echo site_url('Login/edit/' . $list['id']); ?>" class="btn btn-primary">Edit</a>
-
                 </div>
-
               <?php endforeach; ?>
           </form>
         </div>
       </div>
-
     </div>
 
   </div>

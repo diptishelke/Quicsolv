@@ -73,7 +73,6 @@ class Login extends BaseController
             $data['password'] = $this->request->getvar('password');
         }
         $usrmodel->update($id, $data);
-
         return redirect()->to(site_url('Login/login'));
     }
 
