@@ -24,8 +24,9 @@
         <h5 class="card-header">user profile</h5>
 
         <div class="card-body">
-          <form action="<?php echo site_url(''); ?>" method="post" id='frm'>
+          <form action="<?php echo site_url(''); ?>" method="post" id='frm' enctype='multipart/form-data'>
             <?php foreach ($table as $list) : ?>
+              
               <div class="form-group">
                 <label for="name" style="padding:5px;">name</label>
                 <input type="name" name="name" id="name" value="<?php echo $list['name']; ?>" class="form-control">
@@ -48,6 +49,10 @@
               <div class="form-group">
                 <label for="password" style="padding:5px;">Passsword</label>
                 <input type="password" name="password" id="password" value="<?php echo $list['password']; ?>" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="body">select image</label>
+                <input type="file" name="image" id="image" value="<?php echo $list['image']; ?>" class="form-control">
               </div>
                <div class="d-flex justify-content-between align-items-center">
 

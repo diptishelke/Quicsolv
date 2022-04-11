@@ -10,12 +10,14 @@ class Usermodel extends Model
 
 	protected $primaryKey = 'id';
 
-	protected $allowedFields = [ 'name','last-name','email','phone','password'];
+	protected $allowedFields = [ 'name','last-name','email','phone','password','image'];
 
 	public function pswverify($password,$hash){
-		    
+		   // echo "hii";exit;
+		 
 		if (password_verify($password, $hash)) {
 			return true ;
+			
 		} else {
 			return false ;
 		}
