@@ -21,9 +21,23 @@ class Usermodel extends Model
 		} else {
 			return false ;
 		}
+		
+	}
+	public function getloggedinuserdata($id){
+		$builder = $this->db->table('users');
+		$builder->where('uniid',$id);
+		$res=$builder->get();
+		if(count($res->getResultArray())==1){
+			return $res->getRow();
+
+		}
+		else{
+			return false;
+		}
+
 
 	}
-	
+
 	
 		
 		 

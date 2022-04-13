@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/cs/style.css" type="text/css" />
 </head>
 
-
+<body>
 <div class="container" style="margin:25px; padding: 50px; width: 80%">
   <div class="col-md-6" style=" width: 80%">
     <div class="col-md-9 col-lg-6 col-xl-5">
@@ -44,7 +44,9 @@
             <label for="password" style="padding:5px;">password</label>
             <input type="password" name="password" id="password" value="" class="form-control">
           </div>
+          
           <div class="form-group">
+         
                 <label for="image" style="padding:5px;">image</label>
                 <input type="file" name="image" id="image" value="<?php echo $row['image']; ?>" class="form-control">
               </div>

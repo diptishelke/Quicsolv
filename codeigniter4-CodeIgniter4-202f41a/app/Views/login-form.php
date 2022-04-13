@@ -1,4 +1,7 @@
- <!doctype html>
+<?=$this->extend("layout/base");?>
+<?=$this->section("content");?>
+
+<!doctype html>
  <html lang="en">
 
  <head>
@@ -9,6 +12,25 @@
  </head>
 
  <body onload="getcookiedata()">
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">My Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login">Login</a>
+        </li>
+      </div>
+ 
+</nav>
 
    <div class="container" style="margin:25px; padding: 50px; width: 80%">
      <div class="col-md-6" style=" width: 80%">
@@ -19,6 +41,19 @@
          <h5 class="card-header">Login</h5>
          <h3> <?php $session = session();
               echo $session->getFlashdata('login'); ?> </h3>
+              <?php
+              if(isset($validation)):?>
+              <div class="alert alert-danger">
+              <?= $validation->listErrors()?>
+              </div>
+              <?php endif;?>
+              <?php
+              if (session()->getTempdata('error')):
+                ?>
+                <div class="alert alert-danger"><?= session()->getTempdata('error');?></div>
+                <?php
+                endif;
+                ?>
          <div class="card-body">
 
 
@@ -60,6 +95,7 @@
 
    <script src="<?php echo base_url(); ?>/asset/js/bootstrap.min.js"></script>
    <script src="<?php echo base_url(); ?>/asset/js/script.js"> </script>
+   
    <script type="text/javascript">
      function setcookie() {
        var u = document.getElementById('email').value;
@@ -103,3 +139,4 @@
  </body>
 
  </html>
+ 

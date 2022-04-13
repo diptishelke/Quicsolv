@@ -8,7 +8,44 @@ use App\Controllers\BaseController;
 
 class Login extends BaseController
 {
-    protected $helpers = ['form'];
+    public function __construct()
+    {
+        helper('form');
+    }
+    public function index()
+    {
+        return view('homeview');
+    }
+
+
+    public function register()
+
+    {
+        $check = $this->validate([
+            'name' => 'required',
+            'lastname' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+            'password' => 'required',
+        ]);
+        if ($check) {
+            return view('register', ['validation' => $this->validator]);
+        } else {
+            $model = new UserModel();
+
+            $data = [
+                'name' => $this->request->getVar('name'),
+                'lastname' => $this->request->getVar('lastname'),
+                'email' => $this->request->getVar('email'),
+                'phone' => $this->request->getVar('phone'),
+                'password' => password_hash($this->request->getVar('pass'), PASSWORD_BCRYPT)
+
+            ];
+
+            $model->insert($data);
+            return $this->response->redirect(site_url('Login/login'));
+        }
+    }
 
     public function login()
     {
@@ -16,26 +53,24 @@ class Login extends BaseController
     }
     public function submit()
     {
-        $validationRule = [
-            "email" => "required",
-            "password" => "required"
-        ];
+        $data = [];
+
         $usrmodel = new Usermodel();
         $data['table'] = $usrmodel->findAll();
         $result = $usrmodel->where('email', $this->request->getvar('email'))->first();
         $password = $usrmodel->pswverify($this->request->getvar('password'), $result['password']);
-        // print_r($password);exit;
-
         $session = session();
         if ($password) {
-            $session->setFlashdata('login', 'login Succesfully');
             $session->set('user', $result[('name')]);
-
+            
             return view('userprofile', $data);
-        } else {
-            $session->setFlashdata('login', 'login Failed!');
+            }
+         else {
+            $session->setFlashdata('login', 'Invalid details entered!');
             return view('login-form');
         }
+        
+       
     }
 
     public function logout()
@@ -51,13 +86,12 @@ class Login extends BaseController
         return view('edit', $data);
     }
     public function update()
-
     {
         $usrmodel = new Usermodel();
         $file = $this->request->getFile('image');
         if ($file->isValid() && !$file->hasMoved()) {
-            $imagename = $file->getRandomName();
-            $file->move('uploads/', $imagename);
+            $imagename = $file->getName();
+            $file->move('assets/images/', $imagename);
         }
         $id = $this->request->getvar('id');
         $data = [
@@ -73,7 +107,7 @@ class Login extends BaseController
             $data['password'] = $this->request->getvar('password');
         }
         $usrmodel->update($id, $data);
-        return redirect()->to(site_url('Login/login'));
+        return redirect()->to(current_url());
     }
 
     public function delete($id)

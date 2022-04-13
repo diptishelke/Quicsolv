@@ -41,8 +41,8 @@
           <th>LastName</th>
           <th>Phone</th>
           <th>Email</th>
-
-          <th>Action</th>
+          <th>Image</th>
+           <th>Action</th>
 
         </thead>
         <tbody>
@@ -54,10 +54,11 @@
               <td><?php echo $list['last-name']; ?></td>
               <td><?php echo $list['phone']; ?></td>
               <td><?php echo $list['email']; ?></td>
+              <td><?php echo $list['image']; ?></td>
 
               <td>
                 <a href="<?php echo site_url('Login/edit/' . $list['id']); ?>">Edit</a>
-                <a href="<?php echo site_url('Login/delete/' . $list['id']); ?>">Delete</a>
+               
 
               </td>
             </tr>

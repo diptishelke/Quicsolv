@@ -1,4 +1,5 @@
-<!doctype html>
+<?=$this->extend("layout/base");?>
+<?=$this->section("content");?>
 <html lang="en">
 
 <head>
@@ -14,7 +15,7 @@
   <?php $session = session(); ?>
 
   <h1>welcome, <?php echo $session->user; ?> </h1>
-  <a href="<?php echo site_url('Login/logout'); ?>" class="nav-link">Logout </a>
+  
   <div class="container" style="margin:25px; padding: 50px; width: 80%">
     <div class="col-md-6" style=" width: 80%">
       <div class="col-md-9 col-lg-6 col-xl-5">
@@ -52,6 +53,7 @@
               </div>
               <div class="form-group">
                 <label for="body">image</label>
+                 <img src="<?php echo base_url();?>assets/images/<?php echo $list['image']; ?>">
                 <input type="image" name="image" id="image" value="<?php echo $list['image']; ?>" class="form-control">
               </div>
               <div class="d-flex justify-content-between align-items-center">
@@ -68,3 +70,4 @@
 </body>
 
 </html>
+<?=$this->endsection();?>
