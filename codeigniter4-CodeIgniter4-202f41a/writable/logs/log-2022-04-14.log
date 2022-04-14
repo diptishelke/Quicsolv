@@ -1,0 +1,20 @@
+CRITICAL - 2022-04-14 00:12:15 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 60)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-14 00:28:59 --> Undefined variable $table
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\userprofile.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp1\\htdoc...', 146)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('userprofile', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(75): view('userprofile')
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}

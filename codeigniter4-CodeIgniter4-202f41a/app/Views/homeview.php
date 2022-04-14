@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,28 +7,20 @@
     <title>AdminLTE 3 | Dashboard 3</title>
 
     <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/bootstrapcdn.css">
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/all.min.css">
-    <!-- <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css"> -->
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/fontawesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- IonIcons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/adminlte.min.css">
-    <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/ionicons.min.css">
 
-    <script src="<?php echo base_url(); ?>/assets/js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/adminlte.min.css">
 </head>
-<!--
-`body` tag options:
 
-  Apply one or more of the following classes to to the body tag
-  to get the desired effect
-
-  * sidebar-collapse
-  * sidebar-mini
--->
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -79,7 +70,8 @@
             </ul>
         </nav>
         <!-- /.navbar -->
-
+        <h3> <?php $session = session();
+              echo $session->getFlashdata('login'); ?> </h3>
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -93,10 +85,10 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="public/assets/images/dress.jpg" class="img-circle elevation-2" alt="User Image">
+                        <img src="<?php echo base_url(); ?>/asset/dress_1.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block"><?php echo $session->user; ?> </a>
                     </div>
                 </div>
 
@@ -106,10 +98,10 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="<?php echo site_url('Register/index'); ?>" class="nav-link">
                                 <i class="fas fa-circle nav-icon"></i>
                                 <p>
-                                    User list
+                                    My profile
                                 </p>
                             </a>
                         </li>
@@ -127,11 +119,11 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">User list</h1>
+                            <h1 class="m-0">Welcome To Dashboard</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="signup">Logout</a></li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -142,59 +134,18 @@
             <!-- Main content -->
             <?php $session = session(); ?>
 
-  <h1>welcome, <?php echo $session->user; ?> </h1>
-  
-  <div class="container" style="margin:25px; padding: 50px; width: 80%">
-    <div class="col-md-6" style=" width: 80%">
-      <div class="col-md-9 col-lg-6 col-xl-5">
-        <img src="<?php echo base_url(); ?>/asset/userprofile.jpg" class="img-fluid" alt="Sample image">
-      </div>
-      <div class="card">
-        <h5 class="card-header">user profile</h5>
-
-        <div class="card-body">
-          <form action="<?php echo site_url(''); ?>" method="post" id='frm' enctype='multipart/form-data'>
-            <?php foreach ($table as $list) : ?>
-
-              <div class="form-group">
-                <label for="name" style="padding:5px;">name</label>
-                <input type="name" name="name" id="name" value="<?php echo $list['name']; ?>" class="form-control">
-              </div>
-              <input type="hidden" name="id" value="<?php echo $list['id']; ?>">
-
-              <div class="form-group">
-                <label for="last-name" style="padding:5px;">lastname</label>
-                <input type="last-name" name="last-name" id="last-name" value="<?php echo $list['last-name']; ?>" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="phone" style="padding:5px;">phone</label>
-                <input type="phone" name="phone" id="phone" value="<?php echo $list['phone']; ?>" class="form-control">
-              </div>
-
-              <div class="form-group">
-                <label for="email" style="padding:5px;">email address</label>
-                <input type="email" name="email" id="email" value="<?php echo $list['email']; ?>" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="password" style="padding:5px;">Passsword</label>
-                <input type="password" name="password" id="password" value="<?php echo $list['password']; ?>" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="body">image</label>
-                 <img src="<?php echo base_url();?>assets/images/<?php echo $list['image']; ?>">
-                <input type="image" name="image" id="image" value="<?php echo $list['image']; ?>" class="form-control">
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="d-grid gap-2" style="margin-top:10px;">
-                  <a href="<?php echo site_url('Login/edit/' . $list['id']); ?>" class="btn btn-primary">Edit</a>
-                </div>
-              <?php endforeach; ?>
-          </form>
+            <h1>welcome, <?php echo $session->user; ?> </h1>
         </div>
-      </div>
-    </div>
 
-        <!-- /.content-wrapper -->
+        <div class="container" style="margin:25px; padding: 50px; width: 80%">
+            <div class="col-md-6" style=" width: 80%">
+
+
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -224,24 +175,13 @@
             }
         }
     </script>
-    <!-- jQuery -->
-    <script src="<?php echo base_url(); ?>/assets/js/jquery.min.js"></script>
-    <!-- <script src="plugins/jquery/jquery.min.js"></script> -->
 
-    <!-- Bootstrap -->
-    <script src="<?php echo base_url(); ?>/assets/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="<?php echo base_url(); ?>/plugins/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>/asset/js/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>/asset/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>/asset/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url(); ?>/asset/js/adminlte.js"></script>
 
-    <!-- AdminLTE -->
-    <script src="<?php echo base_url(); ?>/assets/js/adminlte.js"></script>
-    <!-- <script src="dist/js/adminlte.js"></script> -->
-
-    <!-- OPTIONAL SCRIPTS -->
-    <script src="plugins/chart.js/Chart.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="dist/js/pages/dashboard3.js"></script>
 </body>
 
 </html>

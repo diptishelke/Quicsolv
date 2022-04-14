@@ -1,0 +1,35 @@
+.error{
+
+    color:red;
+    width:100%;
+    margin-top:10px;
+    
+}
+
+.h1,h1{
+    
+    text-align: center;
+}
+.img-fluid{
+    width: 1500px;
+}
+.bg-primary {
+    width: 1500px;
+}
+
+.breadcrumb-item{
+    font-size: medium;
+}
+.nav-link{
+    font-size: medium;
+}
+.navbar-search-block{
+    
+    padding: 100px;
+    
+}
+.sidebar a {
+    color:red;
+    font-size: large;
+
+}

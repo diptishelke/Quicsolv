@@ -12,44 +12,12 @@ class Login extends BaseController
     {
         helper('form');
     }
-    public function index()
-    {
-        return view('homeview');
-    }
 
 
-    public function register()
-
-    {
-        $check = $this->validate([
-            'name' => 'required',
-            'lastname' => 'required',
-            'email' => 'required',
-            'phone' => 'required',
-            'password' => 'required',
-        ]);
-        if ($check) {
-            return view('register', ['validation' => $this->validator]);
-        } else {
-            $model = new UserModel();
-
-            $data = [
-                'name' => $this->request->getVar('name'),
-                'lastname' => $this->request->getVar('lastname'),
-                'email' => $this->request->getVar('email'),
-                'phone' => $this->request->getVar('phone'),
-                'password' => password_hash($this->request->getVar('pass'), PASSWORD_BCRYPT)
-
-            ];
-
-            $model->insert($data);
-            return $this->response->redirect(site_url('Login/login'));
-        }
-    }
 
     public function login()
     {
-        return view('login-form', ['errors' => []]);
+        return view('signup');
     }
     public function submit()
     {
@@ -67,7 +35,7 @@ class Login extends BaseController
             }
          else {
             $session->setFlashdata('login', 'Invalid details entered!');
-            return view('login-form');
+            return view('signup');
         }
         
        

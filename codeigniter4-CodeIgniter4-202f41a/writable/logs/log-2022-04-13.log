@@ -10,3 +10,570 @@ CRITICAL - 2022-04-13 00:00:48 --> Undefined variable $table
 #8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
 #10 {main}
+CRITICAL - 2022-04-13 00:39:22 --> Undefined array key "last-name"
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\edit.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp1\\htdoc...', 32)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('edit', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(86): view('edit', Array)
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->edit('1')
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}
+CRITICAL - 2022-04-13 00:42:49 --> Undefined array key "last-name"
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\homeview.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp1\\htdoc...', 167)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('homeview', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(66): view('homeview', Array)
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->submit()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}
+CRITICAL - 2022-04-13 00:43:58 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 61)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 02:27:17 --> password_hash(): Passing null to parameter #1 ($password) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash()...', 'C:\\xampp1\\htdoc...', 22)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(22): password_hash(NULL, '2y')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#7 {main}
+CRITICAL - 2022-04-13 04:11:04 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 56)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 04:15:43 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 21)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 04:16:44 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 21)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 04:20:21 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 20)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->store()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 04:24:32 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 76)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->store()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 04:54:19 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 52)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 05:01:36 --> Invalid file: register.php
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('register', Array, true)
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(14): view('register')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#8 {main}
+CRITICAL - 2022-04-13 05:03:23 --> password_hash(): Passing null to parameter #1 ($password) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash()...', 'C:\\xampp1\\htdoc...', 32)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(32): password_hash(NULL, '2y')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#7 {main}
+CRITICAL - 2022-04-13 05:05:24 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 52)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 05:10:14 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 60)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+ERROR - 2022-04-13 05:11:55 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:11:55 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:12:37 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:12:37 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:21:46 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:21:46 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:22:39 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:22:39 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:22:41 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:22:41 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:22:57 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:22:57 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:23:19 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:23:19 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:23:20 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:23:20 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:23:32 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:23:32 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:23:47 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:23:47 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:23:58 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:23:58 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:24:14 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:24:14 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:24:16 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:24:16 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:24:31 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:24:31 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:24:58 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:24:58 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:24:59 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:24:59 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:25:00 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:25:00 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:25:13 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:25:13 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:25:46 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:25:46 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(41): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+ERROR - 2022-04-13 05:25:48 --> Column 'name' cannot be null
+CRITICAL - 2022-04-13 05:25:48 --> Column 'name' cannot be null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(41): CodeIgniter\Model->insert(Array)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+CRITICAL - 2022-04-13 05:37:02 --> password_hash(): Passing null to parameter #1 ($password) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'password_hash()...', 'C:\\xampp1\\htdoc...', 37)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(37): password_hash(NULL, '2y')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->register()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#7 {main}
+CRITICAL - 2022-04-13 05:38:51 --> Invalid file: login-form.php
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login-form.php')
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('login-form', Array, true)
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(68): view('login-form')
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#8 {main}
+CRITICAL - 2022-04-13 05:51:56 --> Undefined array key "last-name"
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\homeview.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp1\\htdoc...', 158)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('homeview', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(65): view('homeview', Array)
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}
+CRITICAL - 2022-04-13 06:07:30 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 60)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 06:17:04 --> Undefined variable $table
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\userprofile.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp1\\htdoc...', 146)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('userprofile', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(75): view('userprofile')
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}
+CRITICAL - 2022-04-13 06:18:54 --> Undefined variable $table
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\userprofile.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp1\\htdoc...', 146)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('userprofile', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(79): view('userprofile')
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}
+CRITICAL - 2022-04-13 06:19:11 --> Undefined variable $table
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\userprofile.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp1\\htdoc...', 146)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('userprofile', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(79): view('userprofile')
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}
+CRITICAL - 2022-04-13 08:32:21 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 60)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 23:39:10 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 60)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 23:44:36 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 60)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 23:50:28 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 60)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 23:54:17 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 60)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
+CRITICAL - 2022-04-13 23:57:24 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 60)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->submit()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#6 {main}
