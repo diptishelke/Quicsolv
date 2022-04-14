@@ -71,7 +71,7 @@
         </nav>
         <!-- /.navbar -->
         <h3> <?php $session = session();
-              echo $session->getFlashdata('login'); ?> </h3>
+                echo $session->getFlashdata('login'); ?> </h3>
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -93,20 +93,7 @@
                 </div>
 
                 <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="<?php echo site_url('Register/index'); ?>" class="nav-link">
-                                <i class="fas fa-circle nav-icon"></i>
-                                <p>
-                                    My profile
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
@@ -119,11 +106,11 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Welcome To Dashboard</h1>
+                           
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="<?=base_url()?>/Register/logout">Logout</a></li>
+                                <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/logout">Logout</a></li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -134,7 +121,11 @@
             <!-- Main content -->
             <?php $session = session(); ?>
 
-            <h1>welcome, <?php echo $session->user; ?> </h1>
+            <h1> Name:<?php echo $session->user; ?> </h1>
+            <h1> LastName:<?php echo $session->name; ?> </h1>
+            <h1>Phone number:<?php echo $session->phone; ?> </h1>
+            <h1>Email:<?php echo $session->email; ?> </h1>
+
         </div>
 
         <div class="container" style="margin:25px; padding: 50px; width: 80%">

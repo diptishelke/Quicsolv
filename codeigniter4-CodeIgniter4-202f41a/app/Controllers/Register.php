@@ -37,9 +37,6 @@ class Register extends BaseController
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
                 'image' => $imagename,
             ];
-            // echo"<pre>";
-            // print_r($data);
-            // end();
             $model->insert($data);
             return $this->response->redirect(site_url('Register/signup'));
            
@@ -61,18 +58,25 @@ class Register extends BaseController
         $session = session();
         if ($password) {
             $session->set('user', $result[('name')]);
-
+            $session->set('name', $result[('lastname')]);
+            $session->set('phone', $result[('phone')]);
+            $session->set('email', $result[('email')]);
             return view('homeview', $data);
         } else {
             $session->setFlashdata('login', 'Invalid details entered!');
-            return view('signup');
+            return view('login');
         }
+        $uniid= session()->get('login');
+
     }
 
+public $usermodel;
 
     public function index()
     {
-         return view('userprofile');
+        $usrmodel = new Usermodel();
+      
+         return view('myprofile');
     }
     
 
@@ -80,7 +84,7 @@ class Register extends BaseController
     {
         $session = session();
         $session->destroy();
-        return view('signup');
+        return view('login');
     }
     public function edit($id)
     {

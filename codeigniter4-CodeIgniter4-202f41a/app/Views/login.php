@@ -24,6 +24,8 @@
         </div>
         <!-- /.login-logo -->
         <div class="card">
+            <h3> <?php $session = session();
+                    echo $session->getFlashdata('login'); ?> </h3>
             <div class="card-body login-card-body">
                 <h1 class="login-box-msg">Sign in </h1>
 
