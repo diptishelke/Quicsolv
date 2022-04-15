@@ -91,7 +91,29 @@
                         <a href="#" class="d-block"><?php echo $session->user; ?> </a>
                     </div>
                 </div>
-
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="<?php echo site_url('Register/edit'); ?>" class="nav-link">
+                                <i class="fas fa-circle nav-icon"></i>
+                                <p>
+                                    Edit profile
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?php echo site_url('Register/edit'); ?>" class="nav-link">
+                                <i class="fas fa-circle nav-icon"></i>
+                                <p>
+                                    Save 
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <!-- Sidebar Menu -->
 
                 <!-- /.sidebar-menu -->
@@ -106,7 +128,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                           
+
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -114,16 +136,22 @@
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
+                </div>
+                <!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <?php $session = session(); ?>
 
+            <?php $session = session(); ?>
+            <?php if ($session->image != '') : ?>
+                <img src="" height="60">
+            <?php else : ?>
+                <img src="<?= base_url() ?>/asset/userprofile.jpg" height="60">
+            <?php endif; ?>
             <h1> Name:<?php echo $session->user; ?> </h1>
             <h1> LastName:<?php echo $session->name; ?> </h1>
-            <h1>Phone number:<?php echo $session->phone; ?> </h1>
+            <h1>Phone:<?php echo $session->phone; ?> </h1>
             <h1>Email:<?php echo $session->email; ?> </h1>
 
         </div>

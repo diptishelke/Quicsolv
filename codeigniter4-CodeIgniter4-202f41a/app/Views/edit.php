@@ -18,27 +18,29 @@
     </div>
     <div class="card">
       <h5 class="card-header">user profile</h5>
-
+     
       <div class="card-body">
+         
         <form action="<?php echo site_url('Login/update'); ?>" method="post" id='frm' enctype='multipart/form-data'>
+        
           <div class="form-group">
             <label for="name" style="padding:5px;">name</label>
-            <input type="name" name="name" id="name" value="<?php echo $row['name']; ?>" class="form-control">
+            <input type="name" name="name" id="name" value="<?php echo $uniid['name']; ?>" class="form-control">
           </div>
           <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
           <div class="form-group">
             <label for="last-name" style="padding:5px;">lastname</label>
-            <input type="last-name" name="last-name" id="last-name" value="<?php echo $row['last-name']; ?>" class="form-control">
+            <input type="last-name" name="last-name" id="last-name" value="<?php echo $uniid['lastname']; ?>" class="form-control">
           </div>
           <div class="form-group">
             <label for="phone" style="padding:5px;">phone</label>
-            <input type="phone" name="phone" id="phone" value="<?php echo $row['phone']; ?>" class="form-control">
+            <input type="phone" name="phone" id="phone" value="<?php echo $uniid['phone'];?>" class="form-control">
           </div>
 
           <div class="form-group">
             <label for="email" style="padding:5px;">email address</label>
-            <input type="email" readonly id="email" value="<?php echo $row['email']; ?>" class="form-control">
+            <input type="email" readonly id="email" value="<?php echo $uniid['email'];?>" class="form-control">
           </div>
           <div class="form-group">
             <label for="password" style="padding:5px;">password</label>

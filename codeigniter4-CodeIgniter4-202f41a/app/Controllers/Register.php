@@ -11,8 +11,8 @@ class Register extends BaseController
     public function register()
 
     {
-        
-     
+
+
         helper(['form', 'url']);
         $validation = \Config\Services::validation();
         $check = $this->validate([
@@ -27,11 +27,11 @@ class Register extends BaseController
         } else {
             $model = new UserModel();
             $imagename = $this->request->getFile('image');
-            
+
 
             $data = [
                 'name' => $this->request->getVar('name'),
-                'lastname'=>$this->request->getVar('lastname'),
+                'lastname' => $this->request->getVar('lastname'),
                 'email' => $this->request->getVar('email'),
                 'phone' => $this->request->getVar('phone'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
@@ -39,7 +39,6 @@ class Register extends BaseController
             ];
             $model->insert($data);
             return $this->response->redirect(site_url('Register/signup'));
-           
         }
     }
 
@@ -52,33 +51,36 @@ class Register extends BaseController
         $data = [];
 
         $usrmodel = new Usermodel();
-        $data['table'] = $usrmodel->findAll();
         $result = $usrmodel->where('email', $this->request->getvar('email'))->first();
         $password = $usrmodel->pswverify($this->request->getvar('password'), $result['password']);
+       
         $session = session();
         if ($password) {
+            $session->set('login', $result);
             $session->set('user', $result[('name')]);
             $session->set('name', $result[('lastname')]);
             $session->set('phone', $result[('phone')]);
             $session->set('email', $result[('email')]);
+            $session->set('image', $result[('image')]);
+
             return view('homeview', $data);
         } else {
             $session->setFlashdata('login', 'Invalid details entered!');
             return view('login');
         }
-        $uniid= session()->get('login');
-
+       
+        //print_r($uniid);exit;
     }
 
-public $usermodel;
+    public $usermodel;
 
     public function index()
     {
         $usrmodel = new Usermodel();
-      
-         return view('myprofile');
+
+        return view('myprofile');
     }
-    
+
 
     public function logout()
     {
@@ -86,11 +88,14 @@ public $usermodel;
         $session->destroy();
         return view('login');
     }
-    public function edit($id)
+    public function edit()
     {
         $usrmodel = new Usermodel();
-        $data['row'] = $usrmodel->where('id', $id)->first();
-        return view('edit', $data);
+        $uniid[] = session()->get('login');
+        //echo $uniid['name']; exit;
+         //print_r($uniid);exit;
+       
+        return view('edit');
     }
     public function update()
     {
