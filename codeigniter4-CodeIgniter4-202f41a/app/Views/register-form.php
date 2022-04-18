@@ -69,7 +69,7 @@
           </div>
           <div class="clearfix password_error"></div>
           <div class="input-group mb-2">
-            <input type="confirm_password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Retype password">
+            <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Retype password">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
@@ -86,17 +86,7 @@
         </form>
       
 
-      <div class="social-auth-links text-center">
-        <p>- OR -</p>
-        <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook mr-2"></i>
-          Sign up using Facebook
-        </a>
-        <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i>
-          Sign up using Google+
-        </a>
-      </div>
+      
 
       <a href="signup" class="text-center">already have a account? login</a>
     </div>

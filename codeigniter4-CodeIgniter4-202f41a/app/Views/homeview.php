@@ -70,8 +70,8 @@
             </ul>
         </nav>
         <!-- /.navbar -->
-        <h3> <?php $session = session();
-              echo $session->getFlashdata('login'); ?> </h3>
+       <h3> <?php $session = session();
+              //echo $session->getFlashdata('login'); ?> </h3>
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -84,9 +84,7 @@
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="<?php echo base_url(); ?>/asset/dress_1.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
+                    
                     <div class="info">
                         <a href="#" class="d-block"><?php echo $session->user; ?> </a>
                     </div>
@@ -119,7 +117,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Welcome To Dashboard</h1>
+                           
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -130,7 +128,9 @@
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
-
+            <span style="text-align: center; color:red; font-size:x-large;"> 
+          <h3> <?php $session = session();
+               //     echo $session->getFlashdata('login');?></h3> </span>
             <!-- Main content -->
             <?php $session = session(); ?>
 

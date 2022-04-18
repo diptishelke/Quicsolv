@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/ionicons.min.css">
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/styl.css">
 </head>
 
 
@@ -32,7 +34,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="<?php echo base_url('Register/homeview'); ?>" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -71,7 +73,8 @@
         </nav>
         <!-- /.navbar -->
         <h3> <?php $session = session();
-                echo $session->getFlashdata('login'); ?> </h3>
+                echo $session->getFlashdata('login'); 
+                echo $session->getFlashdata('success'); ?> </h3>
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -85,7 +88,7 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="<?php echo base_url(); ?>/asset/dress_1.jpg" class="img-circle elevation-2" alt="User Image">
+                        <img src="<?= "/public/asset/images/".$row['image']; ?>"class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
                         <a href="#" class="d-block"><?php echo $session->user; ?> </a>
@@ -105,13 +108,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Register/edit'); ?>" class="nav-link">
+                           <!-- <a href="<?php echo site_url('Register/change_password'); ?>" class="nav-link">
                                 <i class="fas fa-circle nav-icon"></i>
                                 <p>
-                                    Save 
+                                    change password
                                 </p>
                             </a>
-                        </li>
+                        </li>-->
                     </ul>
                 </nav>
                 <!-- Sidebar Menu -->
@@ -130,30 +133,97 @@
                         <div class="col-sm-6">
 
                         </div><!-- /.col -->
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/logout">Logout</a></li>
-                            </ol>
-                        </div><!-- /.col -->
+                       <!-- /.col -->
                     </div><!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
+           
+            <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
 
-            <!-- Main content -->
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/logout">Logout</a></li>
+            <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/index">Home</a></li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <div class="container rounded bg-white mt-5 mb-5">
+  <span style="text-align: center; color:red; font-size:x-large;"> 
+          <h3> <?php $session = session();
+                    echo $session->getFlashdata('success');?></h3> </span>
 
-            <?php $session = session(); ?>
-            <?php if ($session->image != '') : ?>
-                <img src="" height="60">
-            <?php else : ?>
-                <img src="<?= base_url() ?>/asset/userprofile.jpg" height="60">
-            <?php endif; ?>
-            <h1> Name:<?php echo $session->user; ?> </h1>
-            <h1> LastName:<?php echo $session->name; ?> </h1>
-            <h1>Phone:<?php echo $session->phone; ?> </h1>
-            <h1>Email:<?php echo $session->email; ?> </h1>
+    <div class="row">
+      <div class="col-md-3 border-right">
+        <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="<?= "/public/asset/images/".$row['image']; ?>"><span class="font-weight-bold"> </span><span class="text-black-50"></span><span> </span></div>
+      </div>
+      
+      <div class="col-md-5 border-right">
+        <div class="p-3 py-5">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="text-right"> My Profile </h4>
+          </div>
+          <div class="card-body">
+          
+            <form action="<?php echo site_url('#'); ?>" method="post" id='frm' enctype='multipart/form-data'>
 
+              <div class="row mt-2">
+                <div class="col-md-6"><label class="labels">Name</label>
+                  <input type="text" name="name"readonly class="form-control" placeholder="first name" value="<?php echo $row['name']; ?>">
+                </div>
+                <div class="col-md-6"><label class="labels">Surname</label>
+                  <input type="text"name="lastname"readonly class="form-control" value="<?php echo $row['lastname']; ?>" placeholder="surname">
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12"><label class="labels">Mobile Number</label>
+                  <input type="text" name="phone"readonly  class="form-control" placeholder="enter phone number" value="<?php echo $row['phone']; ?>">
+                </div>
+                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                <div class="col-md-12"><label class="labels">Address </label>
+                  <input type="text" name="address"readonly class="form-control" placeholder="enter address " value="<?php echo $row['address']; ?>">
+                </div>
+
+                <div class="col-md-12"><label class="labels">pincode</label>
+                  <input type="text" name="pincode"readonly class="form-control" placeholder="enter pincode" value="<?php echo $row['pincode']; ?>">
+                </div>
+          
+                <div class="col-md-12"><label class="labels">City</label>
+                  <input type="text"name="city"readonly class="form-control" placeholder="enter city" value="<?php echo $row['city']; ?>">
+                </div>
+                <div class="col-md-12"><label class="labels">Email ID</label>
+                  <input type="text" readonly class="form-control" placeholder="email " value="<?php echo $row['email']; ?>">
+                </div>
+
+              </div>
+              <div class="col-md-12"><label class="labels">password</label>
+                  <input type="password"name="password" readonly class="form-control" placeholder="enter password" value="">
+                </div>
+              <div class="row mt-3">
+                <div class="col-md-6"><label class="labels">Country</label>
+                  <input type="text" name="country"readonly class="form-control" placeholder="country" value="<?php echo $row['country']; ?>">
+                </div>
+                <div class="col-md-6"><label class="labels">State/Region</label>
+                  <input type="text" name="state"readonly class="form-control" value="<?php echo $row['state']; ?>" placeholder="state">
+                </div>
+               
+              </div>
+             
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
         </div>
 
         <div class="container" style="margin:25px; padding: 50px; width: 80%">
@@ -197,9 +267,14 @@
 
     <script src="<?php echo base_url(); ?>/asset/js/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>/asset/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="<?php echo base_url(); ?>/asset/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>/asset/js/bootstrap.bundle.min.js"></script>
     <script src="<?php echo base_url(); ?>/asset/js/adminlte.js"></script>
+    
 
 </body>
 

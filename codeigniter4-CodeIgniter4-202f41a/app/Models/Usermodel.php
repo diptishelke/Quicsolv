@@ -10,7 +10,7 @@ class Usermodel extends Model
 
 	protected $primaryKey = 'id';
 
-	protected $allowedFields = [ 'name','lastname','email','phone','password','image'];
+	protected $allowedFields = [ 'name','lastname','email','phone','password','image','address','city','country','state','pincode'];
 
 	public function pswverify($password,$hash){
 		   // echo "hii";exit;
@@ -23,13 +23,13 @@ class Usermodel extends Model
 		}
 		
 	}
-	public function getLoggedInUserData($id){
+	public function update_password($npwd,$id){
 	$builder = $this->db->table('users');
 		$builder->where('uniid',$id);
-		$result=$builder->get();
-		if(count($result->getResultArray())==1){
-			return $result->getRow();
-
+		$builder->update(['password'=>$npwd]);
+		if($this->db->affectedRows()>0){
+        return true;
+		
 		}
 		else{
 			return false;
