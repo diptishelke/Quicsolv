@@ -22,6 +22,12 @@
              required: true,
              pwcheck: true 
           },
+          confirm_password: {
+            minlength: 6,
+            maxlength: 14,
+            required: true,
+            pwcheck: true 
+         },
     },messages:{
           name:{
               required: "please specify  your first name",
@@ -40,6 +46,10 @@
           required: "* this field is required",
           pwcheck: "* password is not strong enough"
       },
+     confirm_password: {
+        required: "* this field is required",
+        pwcheck: "* password is not strong enough"
+    },
     },
     submitHandler: function(form) {
       // do other things for a valid form
@@ -67,6 +77,10 @@
       else if  (element.attr("name") == "password" )
       {
           error.insertAfter(".password_error");
+      }
+      else if  (element.attr("name") == "confirm_password" )
+      {
+          error.insertAfter(".confirm_password_error");
       }
       //for rest of the elements, keeping same position
       else

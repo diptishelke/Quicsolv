@@ -23,19 +23,21 @@ class Usermodel extends Model
 		}
 		
 	}
-	public function update_password($npwd,$id){
-	$builder = $this->db->table('users');
-		$builder->where('uniid',$id);
-		$builder->update(['password'=>$npwd]);
-		if($this->db->affectedRows()>0){
-        return true;
-		
+	
+
+
+	public function updatedAt($id){
+
+		$builder= $this->db->table('users');
+		$builder->where('id',$id);
+		//print_r($id);exit;
+		$builder->update(['updated_at'=>date('Y-m-d h:i:s')]);
+		if($this->db->affectedRows()==1){
+			return true;
 		}
 		else{
 			return false;
 		}
-
-
 	}
 
 	

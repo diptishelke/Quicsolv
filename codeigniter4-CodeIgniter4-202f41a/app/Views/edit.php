@@ -11,8 +11,9 @@
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/index">Back</a></li>
             <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/logout">Logout</a></li>
-            <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/index">Home</a></li>
+           
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -21,7 +22,7 @@
   <div class="container rounded bg-white mt-5 mb-5">
     <div class="row">
       <div class="col-md-3 border-right">
-        <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px"  src="<?= "/public/asset/images/".$row['image']; ?>" alt='image'>
+        <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="square" width="200px"height="250px"  src="<?= "/public/asset/images/".$row['image']; ?>" alt='image'>
         <span class="font-weight-bold"><?php echo $row['name']; ?></span><span class="text-black-50"><?php echo $row['email']; ?></span></div>
       </div>
       

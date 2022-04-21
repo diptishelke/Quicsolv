@@ -6,6 +6,7 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
+    
     /**
      * @var string
      */
@@ -33,7 +34,7 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $protocol = 'mail';
+    public $protocol = 'sendmail';
 
     /**
      * The server path to Sendmail.
@@ -68,7 +69,7 @@ class Email extends BaseConfig
      *
      * @var int
      */
-    public $SMTPPort = 25;
+    public $SMTPPort = 587;
 
     /**
      * SMTP Timeout (in seconds)
@@ -82,6 +83,7 @@ class Email extends BaseConfig
      *
      * @var bool
      */
+    
     public $SMTPKeepAlive = false;
 
     /**
@@ -117,7 +119,7 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $charset = 'UTF-8';
+    public $charset = 'iso-8859-1';
 
     /**
      * Whether to validate the email address
@@ -166,5 +168,9 @@ class Email extends BaseConfig
      *
      * @var bool
      */
-    public $DSN = false;
+ 
+     public $DSN = false;
+
+    
 }
+

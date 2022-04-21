@@ -1,0 +1,14 @@
+CRITICAL - 2022-04-21 00:59:31 --> Call to a member function updatedAt() on null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->forgot_password()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}
+CRITICAL - 2022-04-21 01:23:11 --> Call to a member function updatedAt() on null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->forgot_password()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#5 {main}

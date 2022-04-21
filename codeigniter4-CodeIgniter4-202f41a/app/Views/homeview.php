@@ -35,7 +35,7 @@
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link"></a>
                 </li>
             </ul>
 
@@ -71,7 +71,7 @@
         </nav>
         <!-- /.navbar -->
        <h3> <?php $session = session();
-              //echo $session->getFlashdata('login'); ?> </h3>
+              echo $session->getFlashdata('login','login successfully'); ?> </h3>
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -130,11 +130,11 @@
             <!-- /.content-header -->
             <span style="text-align: center; color:red; font-size:x-large;"> 
           <h3> <?php $session = session();
-               //     echo $session->getFlashdata('login');?></h3> </span>
+                   echo $session->getFlashdata('success');?></h3> </span>
             <!-- Main content -->
             <?php $session = session(); ?>
 
-            <h1>welcome, <?php echo $session->user; ?> </h1>
+            <h1>welcome,<?php echo $session->user; ?> </h1>
         </div>
 
         <div class="container" style="margin:25px; padding: 50px; width: 80%">

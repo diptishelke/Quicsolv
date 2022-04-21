@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/display=fallback">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/fontawesome.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/style.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/icheck-bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/adminlte.min.css">
@@ -87,8 +88,8 @@
       
 
       
-
-      <a href="signup" class="text-center">already have a account? login</a>
+        already have a account?
+      <a href="signup" class="text-center"> login</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->
@@ -99,6 +100,18 @@
   <script src="<?php echo base_url(); ?>/asset/js/jquery/jquery.min.js"></script>
   <script src="<?php echo base_url(); ?>/asset/js/bootstrap.bundle.min.js"></script>
   <script src="<?php echo base_url(); ?>/asset/js/adminlte.js"></script>
-  
+  <script>
+    // keyup function to check password and confirm password match
+    $(document).ready(function() {
+        $("#confirm_password").on('keyup', function() {
+            var password = $("#password").val();
+            var confirmPassword = $("#confirm_password").val();
+            if (password != confirmPassword)
+                $("#CheckPasswordMatch").html("Password does not match !").css("color", "red");
+            else
+                $("#CheckPasswordMatch").html("Password match !").css("color", "green");
+        });
+    });
+</script>
 </body>
 </html>

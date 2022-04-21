@@ -10,3 +10,61 @@ CRITICAL - 2022-04-17 23:23:58 --> Array to string conversion
 #8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
 #10 {main}
+CRITICAL - 2022-04-17 23:46:02 --> Cannot access offset of type string on string
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('myprofile', Array, true)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(90): view('myprofile', Array)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#9 {main}
+CRITICAL - 2022-04-17 23:53:44 --> Cannot access offset of type string on string
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include()
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('myprofile', Array, true)
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(92): view('myprofile', Array)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#9 {main}
+CRITICAL - 2022-04-17 23:54:13 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\myprofile.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 91)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('myprofile', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(89): view('myprofile', Array)
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}
+CRITICAL - 2022-04-17 23:54:34 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\myprofile.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 91)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('myprofile', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(92): view('myprofile', Array)
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}
+CRITICAL - 2022-04-17 23:54:35 --> Trying to access array offset on value of type null
+#0 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Views\myprofile.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp1\\htdoc...', 91)
+#1 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(210): include('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Common.php(1089): CodeIgniter\View\View->render('myprofile', Array, true)
+#4 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Register.php(92): view('myprofile', Array)
+#5 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Register->index()
+#6 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp1\htdocs\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp1\\htdoc...')
+#10 {main}

@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\Usermodel;
 use CodeIgniter\Files\File;
+use PHPMailer\PHPMailer\PHPMailer;
 
 class Register extends BaseController
 {
@@ -49,19 +50,27 @@ class Register extends BaseController
     public function submit()
     {
         $data = [];
+        $rules = [
+            'email' => [
+                'label' => 'Email',
+                'rules' => 'required|valid_email',
+                'errors' => [
+                    'required' => '{field} field required',
+                    'valid_email' => 'valid{field} required'
+                ]
 
-        $usrmodel = new Usermodel();
-        $result = $usrmodel->where('email', $this->request->getvar('email'))->first();
-        $password = $usrmodel->pswverify($this->request->getvar('password'), $result['password']);
+            ],
+        ];
+        $usermodel = new Usermodel();
+        $result = $usermodel->where('email', $this->request->getvar('email'))->first();
+        $password = $usermodel->pswverify($this->request->getvar('password'), $result['password']);
         //print_r($result);exit;
         $session = session();
         if ($password) {
             $session->set('login', $result);
             $session->set('user', $result[('name')]);
-            $session->set('name', $result[('lastname')]);
-            $session->set('phone', $result[('phone')]);
-            $session->set('email', $result[('email')]);
-            $session->set('image', $result[('image')]);
+
+            //$session->setFlashdata('login', 'login successfully');
 
             return view('homeview', $data);
         } else {
@@ -75,7 +84,7 @@ class Register extends BaseController
     {
 
         $uniid['row'] = session()->get('login');
-        return view('homeview',$uniid);
+        return view('homeview', $uniid);
     }
 
 
@@ -103,7 +112,7 @@ class Register extends BaseController
         $uniid['row'] = session()->get('login');
 
         //print_r($uniid);exit;
-        return view('edit', $uniid);
+        return view('my_account', $uniid);
     }
     public function update()
     {
@@ -115,8 +124,8 @@ class Register extends BaseController
         if (!$files->isValid()) {
 
             $id = $this->request->getVar('id');
-          
-           
+
+
             $data = [
                 'name' => $this->request->getVar('name'),
                 'lastname' => $this->request->getVar('lastname'),
@@ -153,52 +162,116 @@ class Register extends BaseController
 
             ];
         }
+
         if ($this->request->getpost('password') != '') {
             $data['password'] = password_hash($this->request->getVar('password'), PASSWORD_BCRYPT);
         }
         $id = $this->request->getVar('id');
-        session()->setFlashdata("Error","");
+        session()->setFlashdata("Error", "");
         $usermodel->update($id, $data);
-       // return view('login');
-       session()->setFlashdata("success","profile updated succesfully !");
-        return redirect()->to(base_url()."/Register/homeview");
+        // return view('login');
+        session()->setFlashdata("success", "profile updated succesfully !");
+        // return $this->response->redirect(site_url('/Register/homeview'));
+        return redirect()->to(base_url() . "/Register/homeview");
     }
+    public function forgot_password()
+    {
+
+        $data = [];
+        if ($this->request->getMethod()  == 'post') {
+            $rules = [
+                'email' => [
+                    'label' => 'Email',
+                    'rules' => 'required|valid_email',
+                    'errors' => [
+                        'required' => '{field} field required',
+                        'valid_email' => 'valid{field} required'
+                    ]
+
+                ],
+            ];
+            $session = session();
+            $usermodel = new Usermodel();
+            if ($this->validate($rules)) {
+                $email = $usermodel->where('email', $this->request->getpost('email'))->first();
+
+                //print_r($email);exit;
+
+                if (!empty($email)) {
+                    //print_r($email['id']);exit;
+                    $userdata = $email['email'];
+                    if ($this->usermodel->updatedAt($email['id'])) {
+
+                        $userdata = $email['email'];
+                        $to = $userdata;
+                        $subject = 'Reset Password Link';
+                        $token = $email['id'];
+                        $message = 'Hi' . $email['name'] . '<br><br>'
+                            . 'Your reset password request has been received.please click'
+                            . 'the below link to reset your password.<br>'
+                            . '<a href="' . base_url() . '/Register/recover_password/' . $token . '">Click here to Reset Password</a><br><br>'
+                            . 'Thanks<br>';
+
+                        $email = \Config\Services::email();
+
+                        $email->setTo($to);
+                        $email->setFrom('diptishelke3399@gmail.com', 'mailtrap');
+                        $email->setSubject($subject);
+                        $email->setMessage($message);
+
+                        if ($email->send()) {
+
+                            session()->setFlashdata('success', 'Reset password link sent to your registerd Email. please verify with in 15 mins', 3);
+                            return redirect()->to(current_url());
+                        } else {
+                            $data = $email->printDebugger(['headers']);
+                            print_r($data);
+                        }
+                    } else {
+                        $this->session->serFlashdata('error', 'Sorry!unable to update.Try again.');
+                        return redirect()->to(current_url());
+                    }
+                } else {
+                    session()->setFlashdata('error', 'Email does not exist');
+                    return redirect()->to(current_url());
+                }
+            } else {
+                $data['validation'] = $this->validator;
+            }
+        }
+
+        return view('forgot-password', $data);
+    }
+
+    public function recover_password()
+    {
+
+        return view('recover-password');
+    }
+
     public function change_password()
     {
-       
+        $session = session();
+
         return view('change_password');
     }
     public function update_password()
     {
-        if(password_verify($this->request->getvar('oldpassword'),session()->get('login')['password']))
-        {
-            if($this->request->getvar('newpassword')===$this->request->getVar('confirmpassword')){
-                if(!$this->usermodel->update(session()->get('login')['id'],['password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)]))
-            {
-                return redirect()->back()->with("Error","failed to change password,try again");
-
+        if (password_verify($this->request->getvar('oldpassword'), session()->get('login')['password'])) {
+            if ($this->request->getvar('newpassword') === $this->request->getVar('confirmpassword')) {
+                $session = session();
+                $usermodel = new Usermodel();
+                if ($this->request->getpost('password') != '') {
+                    $data['password'] = password_hash($this->request->getVar('password'), PASSWORD_BCRYPT);
+                    $usermodel = new Usermodel();
+                    $password = session()->get('login')['password'];
+                    $usermodel->update($password, $data);
+                }
+                session()->setFlashdata("success", "password updated successfully");
+                return redirect()->to(base_url() . "/Register/homeview");
             }
-            $usermodel = new Usermodel();
-            $find=$this->usermodel->getwhere(['id'=>session()->get('login')['id']])->getRowArray();
-            print_r($find);exit;
-            session()->set('login',$find);
-            session()->setFlashdata("success","password updated successfully");
-            return redirect()->to(base_url()."/Register/index");
-
-            }
-            return redirect()->back()->with("Error","confirm password is not matched");
-
+            return redirect()->back()->with("Error", "confirm password is not matched");
         }
-        return redirect()->back()->with("Error","old password is not matched");
-        
-
-       
-    }
-
-    public function delete($id)
-    {
-        $usrmodel = new Usermodel();
-        $usrmodel->where('id', $id)->delete();
-        // return redirect()->to(site_url('userprofile'));
+        return redirect()->back()->with("Error", "old password is not matched");
     }
 }
