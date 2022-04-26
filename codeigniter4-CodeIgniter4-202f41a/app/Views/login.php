@@ -22,7 +22,7 @@
         <h3> <?php $session = session();
                 echo $session->getFlashdata('login'); ?> </h3></span>
         <div class="login-logo">
-            <a href="login"><b>sign in</a>
+            <a href="login"><b></a>
         </div>
         <!-- /.login-logo -->
         <?php 
@@ -32,6 +32,9 @@
   </div>
 
 <?php endif;?>
+<span style="text-align: center; color:red; font-size:x-large;"> 
+          <h3> <?php $session = session();
+                   echo $session->getFlashdata('success');?></h3> </span>
         <div class="card">
 
             <div class="card-body login-card-body">

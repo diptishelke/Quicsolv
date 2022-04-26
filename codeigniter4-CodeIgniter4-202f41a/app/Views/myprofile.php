@@ -70,8 +70,7 @@
       </ul>
     </nav>
     <!-- /.navbar -->
-    <h3> <?php $session = session();
-          echo $session->getFlashdata('success'); ?> </h3>
+    <?php $session = session();?> 
           
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -86,7 +85,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
-            <img src="<?= "/public/asset/images/" . $row['image']; ?>" class="img-circle elevation-2" alt="User Image">
+            <img src="<?= "/public/asset/images/" . $row['image']; ?>" class="square" alt="User Image">
           </div>
 
         </div>
@@ -162,7 +161,7 @@
 
         <div class="row">
           <div class="col-md-3 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" height="180px" src="<?= "/public/asset/images/" . $row['image']; ?>"><span class="font-weight-bold"> </span><span class="text-black-50"></span><span> </span></div>
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="square" width="150px" height="180px" src="<?= "/public/asset/images/" . $row['image']; ?>"><span class="font-weight-bold"> </span><span class="text-black-50"></span><span> </span></div>
           </div>
 
           <div class="col-md-5 border-right">

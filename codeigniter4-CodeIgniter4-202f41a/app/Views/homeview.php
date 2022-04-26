@@ -70,8 +70,7 @@
             </ul>
         </nav>
         <!-- /.navbar -->
-       <h3> <?php $session = session();
-              echo $session->getFlashdata('login','login successfully'); ?> </h3>
+       <?php $session = session(); ?>
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -128,9 +127,7 @@
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
-            <span style="text-align: center; color:red; font-size:x-large;"> 
-          <h3> <?php $session = session();
-                   echo $session->getFlashdata('success');?></h3> </span>
+         
             <!-- Main content -->
             <?php $session = session(); ?>
 

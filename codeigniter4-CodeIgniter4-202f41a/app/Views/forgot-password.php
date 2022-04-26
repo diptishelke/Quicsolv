@@ -16,8 +16,10 @@
 </head>
 
 <body class="hold-transition login-page">
-  <div class="login-box">
-
+<div class="login-box">
+  <div class="login-logo">
+    
+  </div>
     <!-- /.login-logo -->
     <?php
     if (isset($validation)) : ?>
@@ -25,14 +27,15 @@
         <?= $validation->listErrors() ?>
       </div>
     <?php endif; ?>
-    <div class="card">
+   
 
-      <div class="alert alert-danger" role="alert">
-        <h3> <?php $session = session();
-              echo $session->getFlashdata('error'); ?></h3>
-      </div>
-      <h3> <?php $session = session();
+    <?php if(session()->getFlashdata('error')):?>
+      <div class ='alert alert-danger'><?=session()->getFlashdata('error');?></div>
+      <?php endif;?>
+      <h3>
+         <?php $session = session();
               echo $session->getFlashdata('success'); ?></h3>
+             <div class="card">  
     </div>
     <div class="card-body login-card-body">
       <p class="login-box-msg">You forgot your password? Here you can easily retrieve a new password.</p>

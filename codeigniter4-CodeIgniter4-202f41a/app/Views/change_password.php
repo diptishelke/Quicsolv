@@ -11,18 +11,15 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/bootstrapcdn.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/styl.css">
-
-
-
-
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/ionicons.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/fontawesome.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/style.css">
 </head>
-
 
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
-    <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-      <!-- Left navbar links -->
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
@@ -34,10 +31,7 @@
           <a href="#" class="nav-link"></a>
         </li>
       </ul>
-
-      <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
-        <!-- Navbar Search -->
         <li class="nav-item">
           <a class="nav-link" data-widget="navbar-search" href="#" role="button">
             <i class="fas fa-search"></i>
@@ -65,7 +59,7 @@
         </li>
       </ul>
     </nav>
-   
+
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="index3.html" class="brand-link">
@@ -73,22 +67,19 @@
         <span class="brand-text font-weight-light">Admin Panel</span>
       </a>
 
-      <!-- Sidebar -->
+
       <div class="sidebar">
-        Sidebar user panel (optional)
+       
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
 
           <div class="info">
-          <?php $session = session();?>
+            <?php $session = session(); ?>
             <a href="#" class="d-block"><?php echo $session->user; ?> </a>
           </div>
         </div>
-
-        <!-- Sidebar Menu -->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+
             <li class="nav-item">
               <a href="<?php echo site_url('Register/index'); ?>" class="nav-link">
                 <i class="fas fa-circle nav-icon"></i>
@@ -99,35 +90,35 @@
             </li>
           </ul>
         </nav>
-        <!-- /.sidebar-menu -->
+
       </div>
-      <!-- /.sidebar -->
+
     </aside>
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
 
-          </div><!-- /.col -->
+          </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/index">Back</a></li>
               <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/logout">Logout</a></li>
 
             </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+          </div>
+        </div>
+      </div>
     </div>
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
 
-          </div><!-- /.col -->
+          </div>
 
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </div>
     <div class="container rounded bg-white mt-5 mb-5">
       <div class="row">
@@ -152,7 +143,7 @@
                     <input type="password" name="oldpassword" class="form-control" placeholder="old password" value="">
                   </div>
                   <div class="col-md-6"><label class="labels">New password</label>
-                    <input type="password" name="newpassword" id="new_password" class="form-control" value="" placeholder="new password">
+                    <input type="password" name="password" id="new_password" class="form-control" value="" placeholder="new password">
                   </div>
                 </div>
                 <div class="row mt-3">
@@ -163,8 +154,6 @@
 
                   <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">change password </button>
                   </div>
-
-
               </form>
             </div>
           </div>
@@ -173,67 +162,41 @@
       </div>
     </div>
 
-
-
-    <!-- Content Wrapper. Contains page content -->
-
-    <!-- /.content-header -->
-
     <div class="container" style="margin:25px; padding: 50px; width: 80%">
       <div class="col-md-6" style=" width: 80%">
 
-
-        <!-- /.row -->
       </div>
-      <!-- /.container-fluid -->
     </div>
-    <!-- /.content -->
-
-    <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
     </aside>
-    <!-- /.control-sidebar -->
+    <script src="<?php echo base_url(); ?>/asset/js/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>/asset/js/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>/asset/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>/asset/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url(); ?>/asset/js/adminlte.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- IonIcons -->
 
-    <!-- Main Footer -->
-    
-  <!-- ./wrapper -->
-
-
-  <script src="<?php echo base_url(); ?>/asset/js/jquery/jquery.min.js"></script>
-  <script src="<?php echo base_url(); ?>/asset/js/jquery.min.js"></script>
-  <script src="<?php echo base_url(); ?>/asset/js/bootstrap.min.js"></script>
-  <script src="<?php echo base_url(); ?>/asset/js/bootstrap.bundle.min.js"></script>
-  <script src="<?php echo base_url(); ?>/asset/js/adminlte.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/fontawesome.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!-- IonIcons -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/ionicons.min.css">
-
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/adminlte.min.css">
-  <script>
-    // keyup function to check password and confirm password match
-    $(document).ready(function() {
-      $("#confirm_password").on('keyup', function() {
-        var password = $("#new_password").val();
-        var confirmPassword = $("#confirm_password").val();
-        if (password != confirmPassword)
-          $("#CheckPasswordMatch").html("Password does not match !").css("color", "red");
-        else
-          $("#CheckPasswordMatch").html("Password match !").css("color", "green");
+    <script>
+      // keyup function to check password and confirm password match
+      $(document).ready(function() {
+        $("#confirm_password").on('keyup', function() {
+          var password = $("#new_password").val();
+          var confirmPassword = $("#confirm_password").val();
+          if (password != confirmPassword)
+            $("#CheckPasswordMatch").html("Password does not match !").css("color", "red");
+          else
+            $("#CheckPasswordMatch").html("Password match !").css("color", "green");
+        });
       });
-    });
-  </script>
+    </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 </body>

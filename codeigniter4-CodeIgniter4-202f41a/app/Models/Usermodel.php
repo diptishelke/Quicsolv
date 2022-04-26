@@ -23,28 +23,6 @@ class Usermodel extends Model
 		}
 		
 	}
-	
-
-
-	public function updatedAt($id){
-
-		$builder= $this->db->table('users');
-		$builder->where('id',$id);
-		//print_r($id);exit;
-		$builder->update(['updated_at'=>date('Y-m-d h:i:s')]);
-		if($this->db->affectedRows()==1){
-			return true;
-		}
-		else{
-			return false;
-		}
-	}
-
-	
-		
-		 
-      
-	
 
 }
 
