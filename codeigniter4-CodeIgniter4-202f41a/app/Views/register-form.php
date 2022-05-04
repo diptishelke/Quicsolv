@@ -139,11 +139,15 @@
                 success: function(data) {
                     if (data.success == true) {
                         location.href = "<?= site_url('Register/signup') ?>";
-                        Swal.fire('Register Successfully!', '', 'success')
+                        Swal.fire(data.msg, 'user crated', 'success')
+                    }
+                    else {
+                        location.href = "<?= site_url('Register/register') ?>";
+                        Swal.fire(data.msg, '', 'error')
                     }
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
-                    alert('Error at add data');
+                    alert('Error to add data');
                 }
             });
         });
