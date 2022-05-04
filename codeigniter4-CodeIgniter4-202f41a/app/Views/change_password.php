@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard 3</title>
+  <title>Change password</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/bootstrapcdn.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/styl.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/ionicons.min.css">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/adminlte2.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/fontawesome.css">
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/style.css">
 </head>
 
@@ -69,7 +69,7 @@
 
 
       <div class="sidebar">
-       
+
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
 
           <div class="info">
@@ -126,9 +126,9 @@
           <div class="d-flex flex-column align-items-center text-center p-3 py-5"></div>
         </div>
         <div class="col-md-5 border-right">
-          <div class="p-3 py-5">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h4 class="text-right">change password </h4>
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Change Password </h3>
             </div>
             <div class="card-body">
               <span style="text-align: center; color:red; font-size:x-large;">
@@ -136,7 +136,7 @@
                       echo $session->getFlashdata('Error'); ?></h4>
               </span>
 
-              <form action="<?php echo site_url('Register/update_password'); ?>" method="post" id='frm' enctype='multipart/form-data'>
+              <form action="#" id='frm' enctype='multipart/form-data'>
 
                 <div class="row mt-2">
                   <div class="col-md-6"><label class="labels">Old password</label>
@@ -174,12 +174,48 @@
     <script src="<?php echo base_url(); ?>/asset/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>/asset/js/bootstrap.bundle.min.js"></script>
     <script src="<?php echo base_url(); ?>/asset/js/adminlte.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- IonIcons -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Validation library file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <!-- Sweetalert library file -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
 
+    <script>
+      $(function() {
+
+        // Adding form validation
+        $('#frm').validate();
+
+        // Ajax form submission with image
+        $('#frm').on('submit', function(e) {
+
+          e.preventDefault();
+
+          var formData = new FormData(this);
+
+          $.ajax({
+            url: "<?= site_url('/Register/update_password') ?>",
+            type: "POST",
+            cache: false,
+            data: formData,
+            processData: false,
+            contentType: false,
+            dataType: "JSON",
+            success: function(response) {
+              if (response == 1) {
+
+                location.href = "<?= site_url('Register/signup') ?>";
+                Swal.fire('Password changed successfully!');
+              }
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+              location.href = "/Register/change_password";
+              alert('Something went wrong please try again');
+            }
+          });
+        });
+      });
+    </script>
     <script>
       // keyup function to check password and confirm password match
       $(document).ready(function() {
@@ -194,9 +230,7 @@
       });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 </body>

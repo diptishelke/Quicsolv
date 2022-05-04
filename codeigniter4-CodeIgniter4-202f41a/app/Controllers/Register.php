@@ -38,8 +38,22 @@ class Register extends BaseController
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
                 'image' => $imagename,
             ];
-            $model->insert($data);
-            return $this->response->redirect(site_url('Register/signup'));
+            if ($model->insert($data)) {
+
+                $response = [
+                    'success' => true,
+                    'msg' => "User created",
+                ];
+            } else {
+                $response = [
+                    'success' => true,
+                    'msg' => "Failed to create user",
+                ];
+            }
+            return $this->response->setJSON($response);
+            //echo (true);
+           // exit;
+           
         }
     }
 
@@ -69,14 +83,9 @@ class Register extends BaseController
         if ($password) {
             $session->set('login', $result);
             $session->set('user', $result[('name')]);
-
-            //$session->setFlashdata('login', 'login successfully');
-
-            return view('homeview', $data);
-        } else {
-            $session->setFlashdata('login', 'Invalid details entered!');
-            return view('login');
-        }
+            echo (true);
+            exit;
+        } 
 
         //print_r($uniid);exit;
     }
@@ -96,7 +105,7 @@ class Register extends BaseController
 
         $usrmodel = new Usermodel();
 
-        return view('myprofile', $uniid);
+        return view('profile', $uniid);
     }
 
 
@@ -169,10 +178,11 @@ class Register extends BaseController
         $id = $this->request->getVar('id');
         session()->setFlashdata("Error", "");
         $usermodel->update($id, $data);
-        // return view('login');
-        session()->setFlashdata("success", "profile updated succesfully !");
-        // return $this->response->redirect(site_url('/Register/homeview'));
-        return redirect()->to(base_url() . "/Register/index");
+
+        //session()->setFlashdata("success", "profile updated succesfully !");
+        echo (true);
+        exit;
+       // return redirect()->to(base_url() . "/Register/index");
     }
     public function forgot_password()
     {
@@ -200,29 +210,29 @@ class Register extends BaseController
                 if (!empty($email)) {
                     //print_r($email['id']);exit;
                     $userdata = $email['email'];
-                   // $this->usermodel->updatedAt($email['id'])
+                    // $this->usermodel->updatedAt($email['id'])
                     if (!empty($userdata)) {
 
                         $userdata = $email['email'];
-                        $to = $userdata; 
-                        $subject ='ResetPasswordLink';
+                        $to = $userdata;
+                        $subject = 'ResetPasswordLink';
                         $token = $email['id'];
-                        $message = 'Hi' .$email['name'] . '<br><br>'
-                            .'Your reset password request has been received.please click'
-                            .'the below link to reset your password.<br><br>'
-                            .'<a href="'.base_url().'/Register/recover_password/'.$token .'">  Click here to Reset Password </a><br><br>'
-                            .'Thanks<br>ABC';
-                         
+                        $message = 'Hi' . $email['name'] . '<br><br>'
+                            . 'Your reset password request has been received.please click'
+                            . 'the below link to reset your password.<br><br>'
+                            . '<a href="' . base_url() . '/Register/recover_password/' . $token . '">  Click here to Reset Password </a><br><br>'
+                            . 'Thanks<br>ABC';
+
                         $mail = \Config\Services::email();
                         $mail->setTo($to);
                         $mail->setFrom('diptishelke3399@gmail.com');
                         $mail->setSubject($subject);
                         $mail->setMessage($message);
                         $mail->SMTPDebug = 3;
-                         
+
                         if ($mail->send()) {
 
-                            session()->setFlashdata('success','Reset password link sent to your registerd Email. please verify ', 3);
+                            session()->setFlashdata('success', 'Reset password link sent to your registerd Email. please verify ', 3);
                             return redirect()->to(current_url());
                         } else {
                             $dat = $mail->printDebugger(['headers']);
@@ -246,44 +256,42 @@ class Register extends BaseController
 
     public function recover_password()
     {
-        
+
         if ($this->request->getMethod()  == 'post') {
             $rules = [
                 'password' => [
                     'label' => 'password',
                     'rules' => 'required|min_length[6]',
-                   
+
                 ],
                 'confirmpassword' => [
                     'label' => 'confirm password',
                     'rules' => 'required|matches[password]'
-                   
+
                 ],
             ];
             $session = session();
             $usermodel = new Usermodel();
-            if($this->validate($rules)){
+            if ($this->validate($rules)) {
                 $data['password'] = password_hash($this->request->getVar('password'), PASSWORD_BCRYPT);
                 //print_r($password);exit;
                 if ($this->request->getpost('password') != '') {
-                $id = $this->request->getVar('id');
-                $usermodel->update($id, $data);
-                return redirect()->to(base_url() . "/Register/signup");
-
-
-             }else{
-                session()->setFlashdata('error','Unable to update password');
-                return redirect()->to(current_url());
-
-
-             }
-
-            }
-            else{
+                    $id = $this->request->getVar('id');
+                    $usermodel->update($id, $data);
+                    session()->setFlashdata('success', 'Password Updated Successfully! ');
+                    echo (true);
+                    exit;
+                   
+                    //return redirect()->to(base_url() . "/Register/signup");
+                } else {
+                    session()->setFlashdata('error', 'Unable to update password');
+                    return redirect()->to(current_url());
+                }
+            } else {
                 $data['validation'] = $this->validator;
             }
         }
-
+       
         return view('recover-password');
     }
 
@@ -299,17 +307,15 @@ class Register extends BaseController
             if ($this->request->getvar('password') === $this->request->getVar('confirmpassword')) {
                 $session = session();
                 $usermodel = new Usermodel();
-                    $data['password'] = password_hash($this->request->getVar('password'), PASSWORD_BCRYPT);
-                    if ($this->request->getpost('password') != '') {
-                        $id = $this->request->getVar('id');
-                        $usermodel->update($id, $data);
-                        session()->setFlashdata("success", "password updated successfully");
-                        return redirect()->to(base_url() . "/Register/signup");
-        
-        
+                $data['password'] = password_hash($this->request->getVar('password'), PASSWORD_BCRYPT);
+                if ($this->request->getpost('password') != '') {
+                    $id = $this->request->getVar('id');
+                    $usermodel->update($id, $data);
+                    echo (true);
+                    exit;
+                   // session()->setFlashdata("success", "password updated successfully");
+                    //return redirect()->to(base_url() . "/Register/signup");
                 }
-                
-               
             }
             return redirect()->back()->with("Error", "confirm password is not matched");
         }

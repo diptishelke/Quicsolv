@@ -9,15 +9,12 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/bootstrapcdn.css">
-
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/display.fallback.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/fontawesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- IonIcons -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/ionicons.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/adminlte.min.css">
 </head>
 
@@ -70,7 +67,7 @@
             </ul>
         </nav>
         <!-- /.navbar -->
-       <?php $session = session(); ?>
+        <?php $session = session(); ?>
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -83,7 +80,7 @@
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    
+
                     <div class="info">
                         <a href="#" class="d-block"><?php echo $session->user; ?> </a>
                     </div>
@@ -116,22 +113,22 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                           
+
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="<?=base_url()?>/Register/logout">Logout</a></li>
+                                <li class="breadcrumb-item"><a href="<?= base_url() ?>/Register/logout">Logout</a></li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
-         
+
             <!-- Main content -->
             <?php $session = session(); ?>
 
-            <h1>welcome,<?php echo $session->user; ?> </h1>
+            <h1>Welcome, <?php echo $session->user; ?> </h1>
         </div>
 
         <div class="container" style="margin:25px; padding: 50px; width: 80%">
@@ -178,6 +175,7 @@
     <script src="<?php echo base_url(); ?>/asset/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>/asset/js/bootstrap.bundle.min.js"></script>
     <script src="<?php echo base_url(); ?>/asset/js/adminlte.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
 
 </body>
 

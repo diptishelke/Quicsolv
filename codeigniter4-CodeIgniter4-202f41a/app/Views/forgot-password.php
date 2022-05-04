@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <?php
-  use PHPMailer\PHPMailer\PHPMailer;
-  ?>
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+?>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Forgot Password</title>
-
+  <title>Forgot Password</title>
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/fontawesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/css/icheck-bootstrap.min.css">
@@ -16,10 +16,10 @@
 </head>
 
 <body class="hold-transition login-page">
-<div class="login-box">
-  <div class="login-logo">
-    
-  </div>
+  <div class="login-box">
+    <div class="login-logo">
+
+    </div>
     <!-- /.login-logo -->
     <?php
     if (isset($validation)) : ?>
@@ -27,15 +27,15 @@
         <?= $validation->listErrors() ?>
       </div>
     <?php endif; ?>
-   
 
-    <?php if(session()->getFlashdata('error')):?>
-      <div class ='alert alert-danger'><?=session()->getFlashdata('error');?></div>
-      <?php endif;?>
-      <h3>
-         <?php $session = session();
-              echo $session->getFlashdata('success'); ?></h3>
-             <div class="card">  
+
+    <?php if (session()->getFlashdata('error')) : ?>
+      <div class='alert alert-danger'><?= session()->getFlashdata('error'); ?></div>
+    <?php endif; ?>
+    <h4>
+      <?php $session = session();
+      echo $session->getFlashdata('success'); ?></h4>
+    <div class="card">
     </div>
     <div class="card-body login-card-body">
       <p class="login-box-msg">You forgot your password? Here you can easily retrieve a new password.</p>
@@ -64,7 +64,7 @@
       </p>
       <p class="mb-0">
         New User ?
-        <a href="" class="text-center"> Register </a>
+        <a href="<?php echo base_url(); ?>/Register/register" class="text-center"> Register </a>
       </p>
     </div>
     <!-- /.login-card-body -->
