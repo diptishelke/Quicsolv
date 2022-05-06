@@ -133,7 +133,7 @@
                     if (response == 1) {
                       
                       location.href = "<?= site_url('Register/homeview') ?>";
-                        Swal.fire('Login successfully!');
+                        
                     }
                 },
                 error: function(jqXHR, textStatus, errorThrown) {

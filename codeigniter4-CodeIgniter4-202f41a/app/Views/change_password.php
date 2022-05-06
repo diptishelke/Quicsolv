@@ -201,13 +201,17 @@
             processData: false,
             contentType: false,
             dataType: "JSON",
-            success: function(response) {
-              if (response == 1) {
-
-                location.href = "<?= site_url('Register/signup') ?>";
-                Swal.fire('Password changed successfully!');
-              }
-            },
+            success: function(data) {
+                    if (data.success == true) {
+                        location.href = "<?= site_url('Register/signup') ?>";
+                        Swal.fire(data.msg, '', 'success')
+                    }
+                    else {
+                        location.href = "<?= site_url('Register/change_password') ?>";
+                        Swal.fire(data.msg, '', 'error')
+                    }
+                },
+             
             error: function(jqXHR, textStatus, errorThrown) {
               location.href = "/Register/change_password";
               alert('Something went wrong please try again');

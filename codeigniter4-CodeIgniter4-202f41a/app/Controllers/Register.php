@@ -46,14 +46,14 @@ class Register extends BaseController
                 ];
             } else {
                 $response = [
-                    'success' => true,
+                    'success' => false,
                     'msg' => "Failed to create user",
                 ];
             }
             return $this->response->setJSON($response);
             //echo (true);
-           // exit;
-           
+            // exit;
+
         }
     }
 
@@ -85,7 +85,7 @@ class Register extends BaseController
             $session->set('user', $result[('name')]);
             echo (true);
             exit;
-        } 
+        }
 
         //print_r($uniid);exit;
     }
@@ -177,12 +177,24 @@ class Register extends BaseController
         }
         $id = $this->request->getVar('id');
         session()->setFlashdata("Error", "");
-        $usermodel->update($id, $data);
+        if ($usermodel->update($id, $data)) {
+
+            $response = [
+                'success' => true,
+                'msg' => "profile updated successfully ",
+            ];
+        } else {
+            $response = [
+                'success' => false,
+                'msg' => "Failed to update profile",
+            ];
+        }
+        return $this->response->setJSON($response);
 
         //session()->setFlashdata("success", "profile updated succesfully !");
-        echo (true);
-        exit;
-       // return redirect()->to(base_url() . "/Register/index");
+       // echo (true);
+       // exit;
+        // return redirect()->to(base_url() . "/Register/index");
     }
     public function forgot_password()
     {
@@ -277,11 +289,22 @@ class Register extends BaseController
                 //print_r($password);exit;
                 if ($this->request->getpost('password') != '') {
                     $id = $this->request->getVar('id');
-                    $usermodel->update($id, $data);
-                    session()->setFlashdata('success', 'Password Updated Successfully! ');
-                    echo (true);
-                    exit;
-                   
+                  
+                   // session()->setFlashdata('success', 'Password Updated Successfully! ');
+                   if ($usermodel->update($id, $data)) {
+
+                    $response = [
+                        'success' => true,
+                        'msg' => "password updated successfully ",
+                    ];
+                } else {
+                    $response = [
+                        'success' => false,
+                        'msg' => "Failed to update password",
+                    ];
+                }
+                return $this->response->setJSON($response);
+
                     //return redirect()->to(base_url() . "/Register/signup");
                 } else {
                     session()->setFlashdata('error', 'Unable to update password');
@@ -291,7 +314,7 @@ class Register extends BaseController
                 $data['validation'] = $this->validator;
             }
         }
-       
+
         return view('recover-password');
     }
 
@@ -310,11 +333,19 @@ class Register extends BaseController
                 $data['password'] = password_hash($this->request->getVar('password'), PASSWORD_BCRYPT);
                 if ($this->request->getpost('password') != '') {
                     $id = $this->request->getVar('id');
-                    $usermodel->update($id, $data);
-                    echo (true);
-                    exit;
-                   // session()->setFlashdata("success", "password updated successfully");
-                    //return redirect()->to(base_url() . "/Register/signup");
+                    if ($usermodel->update($id, $data)) {
+
+                        $response = [
+                            'success' => true,
+                            'msg' => "password updated successfully ",
+                        ];
+                    } else {
+                        $response = [
+                            'success' => false,
+                            'msg' => "Failed to update password",
+                        ];
+                    }
+                    return $this->response->setJSON($response);
                 }
             }
             return redirect()->back()->with("Error", "confirm password is not matched");
